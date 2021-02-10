@@ -63,7 +63,7 @@ color: var(--first-color);
 }
 
 details[open] p {
-  border-left: 2px solid var(--first-color);
+  border-left: 2px solid var(--first-color-alt);
   margin-left: 55px;
   padding-left: 25px;
   opacity: 100;
