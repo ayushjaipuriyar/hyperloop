@@ -296,7 +296,7 @@ img{
 .about__img{
   width: 280px;
   border-radius: .5rem;
-  justify-self: center;
+  box-shadow: 0 4px 4px rgba(0,0,0,.1);
 }
 
 /*========== SERVICES ==========*/
@@ -446,7 +446,7 @@ img{
   }
 
   .about__img, .app__img{
-    width: 380px;
+    width: 400px;
     order: -1;
   }
 
