@@ -14,66 +14,131 @@
         <title>Hyperloop</title>
     </head>
     <body>
+      <body>
 
-      <div class="contact-form-container">
-  <div class="contact-us">
-    <div class="contact-header">
-      <h1>
-        &#9135;&#9135;&#9135;&#9135;&nbsp;&nbsp;CONTACT US
-      </h1>
-    </div>
-    <div class="social-bar">
-      <ul>
-        <li>
-          <i class="fab fa-facebook-f"></i>
-        </li>
-        <li>
-          <i class="fab fa-twitter"></i>
-        </li>
-        <li>
-          <i class="fab fa-instagram"></i>
-        </li>
-        <li>
-          <i class="fab fa-dribbble"></i>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div class="header">
-    <h1>
-      Let's Get Started
-    </h1>
-    <h2>
-      Have more questions ?
-    </h2>
-    <h3>Connect with us</h3>
-  </div>
-  <div class="address">
-    <i class="fa fa-map-marker"></i>
-    <h3>
-      8266 Gygax
-    </h3>
-    <h3>
-      Norfolk, VA
-    </h3>
-  </div>
-  <div class="phone">
-    <i class="fa fa-phone"></i>
-    <h3>
-      757 287 1608
-    </h3>
-  </div>
-  <div class="email">
-    <i class="fa fa-envelope"></i>
-    <h3>
-      hello@adept.com
-    </h3>
-  </div>
-  <div class="contact-form">
-    <form>
-      <input placeholder="Name" type="text" /><input placeholder="Email" type="email" /><textarea placeholder="Tell us about your project..." rows="4"></textarea><button type="button">SEND </button>
-    </form>
-  </div>
-</div>
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+          <nav class="nav bd-container">
+              <a href="/index.html"> <svg class="loop"> <path stroke="#ededed" id="outline" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" 
+                  d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 				c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" />
+            <path id="outline-bg" opacity="0.05" fill="none" stroke="#ededed" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" 
+                  d="				M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 				c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" />
+                          </svg>
+
+              <div class="nav__menu" id="nav-menu">
+                  <ul class="nav__list">
+                      <li class="nav__item"><a href="./index.html" class="nav__link active-link">Home</a></li>
+                      <li class="nav__item"><a href="./index.html#about" class="nav__link">About</a></li>
+                      <li class="nav__item"><a href="./index.html#services" class="nav__link">Services</a></li>
+                      <li class="nav__item"><a href="./index.html#contact" class="nav__link">Contact us</a></li>
+
+                      <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                  </ul>
+              </div>
+
+              <div class="nav__toggle" id="nav-toggle">
+                  <i class='bx bx-menu'></i>
+              </div>
+          </nav>
+      </header>
+
+      
+        <div class="container" id="container">
+          <div class="form-container sign-up-container">
+            <form action="#">
+              <h1>What do you wanna ask ?</h1>
+              <input type="text" placeholder="Message" />
+              <button>Send message</button>
+            </form>
+          </div>
+          <div class="form-container sign-in-container">
+            <form action="#">
+              <h1>Hi</h1>
+              <span>Please provide the following</span>
+              <input type="text" placeholder="Name" />
+              <input type="email" placeholder="Email" />
+            </form>
+          </div>
+          <div class="overlay-container">
+            <div class="overlay">
+              <div class="overlay-panel overlay-left">
+                <h1>Welcome Back!</h1>
+                <p>To keep connected with us please login with your personal info</p>
+              </div>
+              <div class="overlay-panel overlay-right">
+                <h1>Hello, Friend!</h1>
+                <p>Enter your personal details and connect with us</p>
+                <button class="ghost" id="signUp">Continue</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer section bd-container">
+          <div class="footer__container bd-grid">
+              <div class="footer__content">
+                  <a href="#" class="footer__logo">Hyperloop</a>
+                  <span class="footer__description">Fastest Transport</span>
+                  <div>
+                      <a href="https://www.facebook.com/VirginHyperloop/" class="footer__social"><i class='bx bxl-facebook'></i></a>
+                      <a href="https://www.instagram.com/virginhyperloop/" class="footer__social"><i class='bx bxl-instagram'></i></a>
+                      <a href="https://twitter.com/virginhyperloop" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                      <a href="https://www.youtube.com/virginhyperloop" class="footer__social"><i class='bx bxl-youtube'></i></a>
+                      <a href="https://www.linkedin.com/company/virgin-hyperloop" class="footer__social"><i class='bx bxl-linkedin'></i></a>
+                  </div>
+              </div>
+
+              <div class="footer__content">
+                  <h3 class="footer__title">Services</h3>
+                  <ul>
+                      <li><a href="#" class="footer__link">Delivery</a></li>
+                      <li><a href="#" class="footer__link">Pricing</a></li>
+                      <li><a href="#" class="footer__link">Fast food</a></li>
+                      <li><a href="#" class="footer__link">Reserve your spot</a></li>
+                  </ul>
+              </div>
+
+              <div class="footer__content">
+                  <h3 class="footer__title">Information</h3>
+                  <ul>
+                      <li><a href="#" class="footer__link">Event</a></li>
+                      <li><a href="#" class="footer__link">Contact us</a></li>
+                      <li><a href="#" class="footer__link">Privacy policy</a></li>
+                      <li><a href="#" class="footer__link">Terms of services</a></li>
+                  </ul>
+              </div>
+
+              <div class="footer__content">
+                  <h3 class="footer__title">Adress</h3>
+                  <ul>
+                      <li>2159 Bay Street</li>
+                      <li>Los Angeles</li>
+                      <li>California</li>
+                      <li>United States</li>
+                  </ul>
+              </div>
+          </div>
+
+          <p class="footer__copy">&#169; 2021 Virginhyperloop All right reserved</p>
+      </footer>
+
+      <!--========== SCROLL REVEAL ==========-->
+      <script src="https://unpkg.com/scrollreveal"></script>
+
+      <!--========== MAIN JS ==========-->
+      <script src="assets/js/main.js"></script>
+      <script> const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const container = document.getElementById('container');
+        
+        signUpButton.addEventListener('click', () => {
+          container.classList.add("right-panel-active");
+        });
+        
+        signInButton.addEventListener('click', () => {
+          container.classList.remove("right-panel-active");
+        });</script>
+
 </body>
 </html>
