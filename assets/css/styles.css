@@ -401,9 +401,20 @@ img{
 
 /*========== MEDIA QUERIES ==========*/
 @media screen and (min-width: 576px){
+  .home__container,
+  .about__container{
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+  }
+
   .about__data, .about__initial,
   .contact__container, .contact__initial{
     text-align: initial;
+  }
+
+  .about__img{
+    width: 400px;
+    order: -1;
   }
 
   .contact__container{
@@ -448,12 +459,22 @@ img{
     justify-items: center;
   }
 
+  .services__container{
+     margin-top: var(--mb-6);
+  }
+}
 
 @media screen and (min-width: 960px){
   .bd-container{
     margin-left: auto;
     margin-right: auto;
   }
+
+  .about__container,
+  .app__container{
+    column-gap: 7rem;
+  }
+}
 
 
 #outline {
