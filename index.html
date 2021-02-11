@@ -1,173 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!--========== BOX ICONS ==========-->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <!--========== BOX ICONS ==========-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
-        <!--========== CSS ==========-->
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="stylesheet" href="assets/css/font-awesome.css">
-        <title>Hyperloop</title>
-    </head>
-    <body>
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.css" />
+    <title>Hyperloop</title>
+  </head>
+  <body>
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+      <nav class="nav bd-container">
+        <a href="/index.html">
+          <svg class="loop">
+            <path
+              stroke="#ededed"
+              id="outline"
+              fill="none"
+              stroke-width="4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-miterlimit="10"
+              d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 				c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z"
+            />
+            <path
+              id="outline-bg"
+              opacity="0.05"
+              fill="none"
+              stroke="#ededed"
+              stroke-width="4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-miterlimit="10"
+              d="				M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 				c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z"
+            />
+          </svg>
+        </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#services" class="nav__link">Speciality</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact us</a>
+            </li>
 
+            <li><i class="bx bx-moon change-theme" id="theme-button"></i></li>
+          </ul>
+        </div>
 
-        <!--========== HEADER ==========-->
-        <header class="l-header" id="header">
-            <nav class="nav bd-container">
-                <a href="/index.html"> <svg class="loop"> <path stroke="#ededed" id="outline" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" 
-                    d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 				c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" />
-              <path id="outline-bg" opacity="0.05" fill="none" stroke="#ededed" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" 
-                    d="				M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 				c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" />
-                            </svg>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#services" class="nav__link">Speciality</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact us</a></li>
+    <main class="l-main">
+      <!--========== HOME ==========-->
+      <section class="home" id="home">
+        <div class="home__container bd-container bd-grid">
+          <div class="home__data">
+            <h1 class="home__title">Hyperloop</h1>
+            <h2 class="home__subtitle">
+              Try the fastetest <br />
+              transport.
+            </h2>
+            <a href="#about" class="button">Learn More</a>
+          </div>
 
-                        <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
-                    </ul>
-                </div>
+          <img src="assets/img/pod.png" alt="" class="home__img" />
+        </div>
+      </section>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
+      <!--========== ABOUT ==========-->
+      <section class="about section bd-container" id="about">
+        <div class="about__container bd-grid">
+          <div class="about__data">
+            <span class="section-subtitle about__initial"
+              >About Hyperloop System</span
+            >
+            <h2 class="section-title about__initial">
+              We provide the fastest consumer transport
+            </h2>
+            <p class="about__description">
+              A Hyperloop is a proposed mode of passenger and/or freight
+              transportation, first used to describe an open-source vactrain
+              design released by a joint team from Tesla and SpaceX.Drawing
+              heavily from Robert Goddard's vactrain, a hyperloop comprises a
+              sealed tube or system of tubes through which a pod may travel free
+              of air resistance or friction conveying people or objects at high
+              speed while being very efficient.
+            </p>
+            <a href="./history.html" class="button">Explore history</a>
+          </div>
 
-        <main class="l-main">
-            <!--========== HOME ==========-->
-            <section class="home" id="home">
-                <div class="home__container bd-container bd-grid">
-                    <div class="home__data">
-                        <h1 class="home__title">Hyperloop</h1>
-                        <h2 class="home__subtitle">Try the fastetest <br> transport.</h2>
-                        <a href="#about" class="button">Learn More</a>
-                    </div>
-                    
-                    <img src="assets/img/pod.png" alt="" class="home__img">
-                </div>
-            </section>
-            
-            <!--========== ABOUT ==========-->
-            <section class="about section bd-container" id="about">
-                <div class="about__container  bd-grid">
-                    <div class="about__data">
-                        <span class="section-subtitle about__initial">About Hyperloop System</span>
-                        <h2 class="section-title about__initial">We provide the fastest consumer transport</h2>
-                        <p class="about__description">A Hyperloop is a proposed mode of passenger and/or freight transportation, first used to describe an open-source vactrain design released by a joint team from Tesla and SpaceX.Drawing heavily from Robert Goddard's vactrain, a hyperloop comprises a sealed tube or system of tubes through which a pod may travel free of air resistance or friction conveying people or objects at high speed while being very efficient.</p>
-                        <a href="./history.html" class="button">Explore history</a>
-                    </div>
+          <img src="assets/img/pod.gif" alt="" class="about__img" />
+        </div>
+      </section>
 
-                    <img src="assets/img/pod.gif" alt="" class="about__img">
-                </div>
-            </section>
+      <!--========== SERVICES ==========-->
+      <section class="services section bd-container" id="services">
+        <span class="section-subtitle">Speciality</span>
+        <h2 class="section-title">Our main focus</h2>
 
-            <!--========== SERVICES ==========-->
-            <section class="services section bd-container" id="services">
-                <span class="section-subtitle">Speciality</span>
-                <h2 class="section-title">Our main focus</h2>
+        <div class="services__container bd-grid">
+          <div class="services__content">
+            <i class="fa fa-2x fa-rocket" aria-hidden="true"></i>
+            <h3 class="services__title">Speed</h3>
+            <p class="services__description">
+              Reaches upto a speed of 1000 km/h.That is 3x faster than
+              high-speed rail and more than 10x faster than traditional rail.
+            </p>
+          </div>
 
-                <div class="services__container  bd-grid">
-                    <div class="services__content">
-                        <i class="fa fa-2x fa-rocket" aria-hidden="true"></i>
-                        <h3 class="services__title">Speed</h3>
-                        <p class="services__description">Reaches upto a speed of 310 km/h and can reach destinations faster than an airplane</p>
-                    </div>
+          <div class="services__content">
+            <i class="fa fa-2x fa-subway fa-rotate-180" aria-hidden="true"></i>
+            <h3 class="services__title">Aeroshell</h3>
+            <p class="services__description">
+              The aeroshell is made of carbon fiber panels and is used to test a
+              wide variety of intersections within the pod structure. Carbon
+              fiber is lightweight and stronger than steel.
+            </p>
+          </div>
 
-                    <div class="services__content">
-                        <i class="fa fa-2x fa-subway fa-rotate-180" aria-hidden="true"></i>
-                        <h3 class="services__title">Aeroshell</h3>
-                        <p class="services__description">The aeroshell is made of carbon fiber panels and is used to test a wide variety of intersections within the pod structure. Carbon fiber is lightweight and stronger than steel.</p>
-                    </div>
+          <div class="services__content">
+            <i
+              class="fa fa-2x fa-credit-card-alt fa-rotate-180"
+              aria-hidden="true"
+            ></i>
+            <h3 class="services__title">Levitating Chassis</h3>
+            <p class="services__description">
+              The levitating chassis is made of structural aluminium and houses
+              the propultion system and magnets for levitating and guidance. Its
+              design is similar to a Formula 1 car,as it's build, like the
+              shell, to be lighweight but strong.
+            </p>
+          </div>
+        </div>
+        <div class="services__container bd-grid">
+          <div class="services__content">
+            <i class="fa fa-2x fa-automobile" aria-hidden="true"></i>
+            <h3 class="services__title">Sustainability</h3>
+            <p class="services__description">
+              Sustainability is not a nice thing to have; it’s a requirement for
+              transportation that moves us forward. Over its lifetime, the
+              Virgin Hyperloop will have a lower environmental impact than other
+              modes of mass transportation.
+            </p>
+          </div>
 
-                    <div class="services__content">
-                        <i class="fa fa-2x fa-credit-card-alt fa-rotate-180" aria-hidden="true"></i>
-                        <h3 class="services__title">Levitating Chassis</h3>
-                        <p class="services__description">The levitating chassis is made of structural aluminium and houses the propultion system and magnets for levitating and guidance. Its design is similar to a Formula 1 car,as it's build, like the shell, to be lighweight but strong.</p>
-                    </div>
-                </div>
-            </section>
-            <!--========== CONTACT US ==========-->
-            <section class="contact section bd-container" id="contact">
-                <div class="contact__container bd-grid">
-                    <div class="contact__data">
-                        <span class="section-subtitle contact__initial">Let's talk</span>
-                        <h2 class="section-title contact__initial">Contact us</h2>
-                        <p class="contact__description">If you want to work with us feel free to ,contact us and we will attend you quickly, with our 24/7 chat service.</p>
-                    </div>
+          <div class="services__content">
+            <i class="fa fa-2x fa-subway fa-rotate-180" aria-hidden="true"></i>
+            <h3 class="services__title">Safety & Comfort</h3>
+            <p class="services__description">
+              The Virgin Hyperloop delivers airline speeds, the same G-forces as
+              rail, and the ease of riding a metro. A central command & control
+              ensures safe and reliable passage throughout the network.
+            </p>
+          </div>
 
-                    <div class="contact__button">
-                        <a href="./contact.html" class="button">Contact us now</a>
-                    </div>
+          <div class="services__content">
+            <i class="fa fa-2x fa-warning" aria-hidden="true"></i>
+            <h3 class="services__title">System Operations</h3>
+            <p class="services__description">
+              The passenger of the future will expect direct and on-demand
+              transportation. With Virgin Hyperloop, there are no timetables.
+              Several pods can depart per minute, and the system does not
+              require stops at every station.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--========== CONTACT US ==========-->
+      <section class="contact section bd-container" id="contact">
+        <div class="contact__container bd-grid">
+          <div class="contact__data">
+            <span class="section-subtitle contact__initial">Let's talk</span>
+            <h2 class="section-title contact__initial">Contact us</h2>
+            <p class="contact__description">
+              If you want to work with us feel free to ,contact us and we will
+              attend you quickly, with our 24/7 chat service.
+            </p>
+          </div>
 
-                    <div class="contact__data">
-                        <p class="contact__description">Have a few more questions ? don't forget to </p>
-                    </div>
+          <div class="contact__button">
+            <a href="./contact.html" class="button">Contact us now</a>
+          </div>
 
-                    <div class="contact__button">
-                        <a href="./faq.html" class="button">Check the FAQ</a>
-                    </div>
-                </div>
-            </section>
-        </main>
+          <div class="contact__data">
+            <p class="contact__description">
+              Have a few more questions ? don't forget to
+            </p>
+          </div>
 
-        <!--========== FOOTER ==========-->
-        <footer class="footer section bd-container">
-            <div class="footer__container bd-grid">
-                <div class="footer__content">
-                    <a href="#" class="footer__logo">Hyperloop</a>
-                    <span class="footer__description">Fastest Transport</span>
-                    <div>
-                        <a href="https://www.facebook.com/VirginHyperloop/" class="footer__social"><i class='bx bxl-facebook'></i></a>
-                        <a href="https://www.instagram.com/virginhyperloop/" class="footer__social"><i class='bx bxl-instagram'></i></a>
-                        <a href="https://twitter.com/virginhyperloop" class="footer__social"><i class='bx bxl-twitter'></i></a>
-                        <a href="https://www.youtube.com/virginhyperloop" class="footer__social"><i class='bx bxl-youtube'></i></a>
-                        <a href="https://www.linkedin.com/company/virgin-hyperloop" class="footer__social"><i class='bx bxl-linkedin'></i></a>
-                    </div>
-                </div>
+          <div class="contact__button">
+            <a href="./faq.html" class="button">Check the FAQ</a>
+          </div>
+        </div>
+      </section>
+    </main>
 
-                <div class="footer__content">
-                    <h3 class="footer__title">Services</h3>
-                    <ul>
-                        <li><a href="#" class="footer__link">Reserve your spot</a></li>
-                    </ul>
-                </div>
+    <!--========== FOOTER ==========-->
+    <footer class="footer section bd-container">
+      <div class="footer__container bd-grid">
+        <div class="footer__content">
+          <a href="#" class="footer__logo">Hyperloop</a>
+          <span class="footer__description">Fastest Transport</span>
+          <div>
+            <a
+              href="https://www.facebook.com/VirginHyperloop/"
+              class="footer__social"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/virginhyperloop/"
+              class="footer__social"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a href="https://twitter.com/virginhyperloop" class="footer__social"
+              ><i class="bx bxl-twitter"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/virginhyperloop"
+              class="footer__social"
+              ><i class="bx bxl-youtube"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/company/virgin-hyperloop"
+              class="footer__social"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+          </div>
+        </div>
 
-                <div class="footer__content">
-                    <h3 class="footer__title">Information</h3>
-                    <ul>
-                        <li><a href="#" class="footer__link">Event</a></li>
-                        <li><a href="#" class="footer__link">Contact us</a></li>
-                        <li><a href="#" class="footer__link">Privacy policy</a></li>
-                        <li><a href="#" class="footer__link">Terms of services</a></li>
-                    </ul>
-                </div>
+        <div class="footer__content">
+          <h3 class="footer__title">Experience</h3>
+          <ul>
+            <li><a href="#" class="footer__link"></a></li>
+          </ul>
+        </div>
 
-                <div class="footer__content">
-                    <h3 class="footer__title">Adress</h3>
-                    <ul>
-                        <li>2159 Bay Street</li>
-                        <li>Los Angeles</li>
-                        <li>California</li>
-                        <li>United States</li>
-                    </ul>
-                </div>
-            </div>
+        <div class="footer__content">
+          <h3 class="footer__title">Information</h3>
+          <ul>
+            <li><a href="#" class="footer__link">Event</a></li>
+            <li><a href="#" class="footer__link">Contact us</a></li>
+            <li><a href="#" class="footer__link">Privacy policy</a></li>
+            <li><a href="#" class="footer__link">Terms of services</a></li>
+          </ul>
+        </div>
 
-            <p class="footer__copy">&#169; 2021 Virginhyperloop All right reserved</p>
-        </footer>
+        <div class="footer__content">
+          <h3 class="footer__title">Adress</h3>
+          <ul>
+            <li>2159 Bay Street</li>
+            <li>Los Angeles</li>
+            <li>California</li>
+            <li>United States</li>
+          </ul>
+        </div>
+      </div>
 
-        <!--========== SCROLL REVEAL ==========-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+      <p class="footer__copy">&#169; 2021 Virginhyperloop All right reserved</p>
+    </footer>
 
-        <!--========== MAIN JS ==========-->
-        <script src="assets/js/main.js"></script>
-    </body>
+    <!--========== SCROLL REVEAL ==========-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>

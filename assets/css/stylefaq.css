@@ -26,7 +26,7 @@ div.seperator {
 .faq-list > div {
   border-bottom: 0.07em solid #ededed;
   padding: 1em 0em;
-} 
+}
 
 .faq-list > div:last-child {
   border: initial;
@@ -40,7 +40,7 @@ summary {
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none; 
+  -ms-user-select: none;
   user-select: none;
 }
 
@@ -50,16 +50,22 @@ summary:hover {
 }
 
 details[open] summary ~ * {
-animation: sweep .5s ease-in-out;
+  animation: sweep 0.5s ease-in-out;
 }
 
 @keyframes sweep {
-0%    {opacity: 0; margin-left: -10px}
-100%  {opacity: 1; margin-left: 55px}
+  0% {
+    opacity: 0;
+    margin-left: -10px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 55px;
+  }
 }
 
 details[open] summary {
-color: var(--first-color);
+  color: var(--first-color);
 }
 
 details[open] p {
@@ -80,7 +86,7 @@ details[open] summary:after {
 .faq-body {
   width: 70vw;
   margin: 10vh auto;
-  box-shadow: 0 4px 4px rgba(0,0,0,.1);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
   border-radius: 0.2em;
   padding: 5em;
   background-color: var(--background-color);

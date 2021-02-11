@@ -1,274 +1,753 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--========== BOX ICONS ==========-->
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <!--========== CSS ==========-->
-    <link rel="stylesheet" href="assets/css/stylefaq.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/stylefaq.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.css" />
     <title>Hyperloop</title>
   </head>
-  <body>      <!--========== HEADER ==========-->
+  <body>
+    <!--========== HEADER ==========-->
     <header class="l-header" id="header">
-        <nav class="nav bd-container">
-            <a href="/index.html"> <svg class="loop"> <path stroke="#ededed" id="outline" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" 
-                d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 				c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" />
-          <path id="outline-bg" opacity="0.05" fill="none" stroke="#ededed" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" 
-                d="				M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 				c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" />
-                        </svg>
+      <nav class="nav bd-container">
+        <a href="/index.html">
+          <svg class="loop">
+            <path
+              stroke="#ededed"
+              id="outline"
+              fill="none"
+              stroke-width="4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-miterlimit="10"
+              d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 				c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z"
+            />
+            <path
+              id="outline-bg"
+              opacity="0.05"
+              fill="none"
+              stroke="#ededed"
+              stroke-width="4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-miterlimit="10"
+              d="				M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 				c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z"
+            />
+          </svg>
+        </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="./index.html#home" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="./index#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="./index#services" class="nav__link">Speciality</a>
+            </li>
+            <li class="nav__item">
+              <a href="./index#contact" class="nav__link">Contact us</a>
+            </li>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="./index.html#home" class="nav__link active-link">Home</a></li>
-                    <li class="nav__item"><a href="./index#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="./index#services" class="nav__link">Speciality</a></li>
-                    <li class="nav__item"><a href="./index#contact" class="nav__link">Contact us</a></li>
+            <li><i class="bx bx-moon change-theme" id="theme-button"></i></li>
+          </ul>
+        </div>
 
-                    <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
-                </ul>
-            </div>
-
-            <div class="nav__toggle" id="nav-toggle">
-                <i class='bx bx-menu'></i>
-            </div>
-        </nav>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
     </header>
+
+    <!--========== FAQ BODY ==========-->
     <div id="faq" class="faq-body">
       <div class="faq-header">
         <h3 class="faq-title">FAQ's</h3>
-        <div class="seperator"></div>
         <div class="faq-list">
           <div>
             <details>
-            <summary>Q. What is Virgin Hyperloop?</summary>
-            <p class="faq-content">We're a privately-held company on a mission to create fast, effortless journeys that expand possibilities and eliminate the barriers of distance and time.</p>
+              <summary>Q. What is Virgin Hyperloop?</summary>
+              <p class="faq-content">
+                We're a privately-held company on a mission to create fast,
+                effortless journeys that expand possibilities and eliminate the
+                barriers of distance and time.
+              </p>
+            </details>
           </div>
           <div>
             <details>
-            <summary>Q. Why are you building a hyperloop?</summary>
-            <p class="faq-content">There are too many people caught bumper-to-bumper in traffic, who have to make a hard choice with their family on where to live and work, and who are limited in their access to experiences and opportunities. We're building a system that will give back time and deliver the travel experience of the future.</p>
+              <summary>Q. Why are you building a hyperloop?</summary>
+              <p class="faq-content">
+                There are too many people caught bumper-to-bumper in traffic,
+                who have to make a hard choice with their family on where to
+                live and work, and who are limited in their access to
+                experiences and opportunities. We're building a system that will
+                give back time and deliver the travel experience of the future.
+              </p>
+            </details>
           </div>
           <div>
             <details>
-            <summary>Q. Why do we need hyperloop now?</summary>
-            <p class="faq-content">The number of cars is set to double worldwide by 2040, same with air and trucking. We are already dealing with the effects of pollution, lack of access, and congestion. If we only invest in the same technologies we’ve had for more than a century, tomorrow will look like today, only much worse. It’s been over a century since the Wright Brothers first showed us human flight was possible. It’s time for a new era in transportation capable of carrying us forward for the next 100 years.</p>
+              <summary>Q. Why do we need hyperloop now?</summary>
+              <p class="faq-content">
+                The number of cars is set to double worldwide by 2040, same with
+                air and trucking. We are already dealing with the effects of
+                pollution, lack of access, and congestion. If we only invest in
+                the same technologies we’ve had for more than a century,
+                tomorrow will look like today, only much worse. It’s been over a
+                century since the Wright Brothers first showed us human flight
+                was possible. It’s time for a new era in transportation capable
+                of carrying us forward for the next 100 years.
+              </p>
+            </details>
           </div>
           <div>
             <details>
-            <summary>Q. How much funding has Virgin Hyperloop received?</summary>
-            <p class="faq-content">To date, we have received over $400 million.</p>
+              <summary>
+                Q. How much funding has Virgin Hyperloop received?
+              </summary>
+              <p class="faq-content">
+                To date, we have received over $400 million.
+              </p>
+            </details>
           </div>
           <div>
             <details>
-            <summary>Q. Who are the key investors in Virgin Hyperloop?</summary>
-            <p class="faq-content">A major investor of ours is <a href="https://www.dpworld.com/">DP World</a>, a leading enabler of global trade who sees the potential of sustainable hyperloop-enabled cargo systems. Additionally, we are backed by the <a href="https://www.virgin.com/virgingroup/">Virgin Group</a>, an industry leader across rail, aviation, ships, and even spacecrafts. For more on our investors, visit the <a href="https://virginhyperloop.com/team">company page</a>.</p>
+              <summary>
+                Q. Who are the key investors in Virgin Hyperloop?
+              </summary>
+              <p class="faq-content">
+                A major investor of ours is
+                <a href="https://www.dpworld.com/">DP World</a>, a leading
+                enabler of global trade who sees the potential of sustainable
+                hyperloop-enabled cargo systems. Additionally, we are backed by
+                the
+                <a href="https://www.virgin.com/virgingroup/">Virgin Group</a>,
+                an industry leader across rail, aviation, ships, and even
+                spacecrafts. For more on our investors, visit the
+                <a href="https://virginhyperloop.com/team">company page</a>.
+              </p>
+            </details>
           </div>
           <div>
             <details>
-            <summary>Q. Does Virgin Hyperloop have any partners?</summary>
-            <p class="faq-content">Virgin Hyperloop is the only hyperloop company that has a strategic partnership with a mass transportation company, the <a href="https://www.virgin.com/virgingroup/">Virgin Group</a>, an industry leader across rail, aviation, ships, and even spacecrafts. Another key partner of ours is <a href="https://www.dpworld.com/">DP World</a>, a leading enabler of global trade who sees the potential of sustainable hyperloop-enabled cargo systems. Other industry-leading partners include <a href="https://www.spiritaero.com/">Spirit AeroSystems</a>, <a href="https://home.kpmg/xx/en/home.html">KPMG</a>, <a href="https://www.fosterandpartners.com/">Foster + Partners</a>, <a href="https://www.systra.com/en/">Systra</a>, <a href="https://big.dk/#projects">BIG</a>, <a href="https://www.sncf.com/fr">SNCF</a>, <a href="https://www.ge.com/">GE</a>, <a href="https://www.bahn.com/i/view/index.shtml">Deutsche Bahn</a>, <a href="https://www.bv.com/">Black &amp; Veatch</a>, <a href="https://www.mckinsey.com/">McKinsey</a>, <a href="https://www2.deloitte.com/us/en.html">Deloitte</a>, <a href="https://www.jacobs.com/">Jacobs</a>, <a href="https://www.turnerandtownsend.com/">Turner &amp; Townsend</a>, <a href="https://www.arup.com/">ARUP</a>, and <a href="https://us.steergroup.com/en-us">Steer</a>, among others.</p>
+              <summary>Q. Does Virgin Hyperloop have any partners?</summary>
+              <p class="faq-content">
+                Virgin Hyperloop is the only hyperloop company that has a
+                strategic partnership with a mass transportation company, the
+                <a href="https://www.virgin.com/virgingroup/">Virgin Group</a>,
+                an industry leader across rail, aviation, ships, and even
+                spacecrafts. Another key partner of ours is
+                <a href="https://www.dpworld.com/">DP World</a>, a leading
+                enabler of global trade who sees the potential of sustainable
+                hyperloop-enabled cargo systems. Other industry-leading partners
+                include
+                <a href="https://www.spiritaero.com/">Spirit AeroSystems</a>,
+                <a href="https://home.kpmg/xx/en/home.html">KPMG</a>,
+                <a href="https://www.fosterandpartners.com/"
+                  >Foster + Partners</a
+                >, <a href="https://www.systra.com/en/">Systra</a>,
+                <a href="https://big.dk/#projects">BIG</a>,
+                <a href="https://www.sncf.com/fr">SNCF</a>,
+                <a href="https://www.ge.com/">GE</a>,
+                <a href="https://www.bahn.com/i/view/index.shtml"
+                  >Deutsche Bahn</a
+                >, <a href="https://www.bv.com/">Black &amp; Veatch</a>,
+                <a href="https://www.mckinsey.com/">McKinsey</a>,
+                <a href="https://www2.deloitte.com/us/en.html">Deloitte</a>,
+                <a href="https://www.jacobs.com/">Jacobs</a>,
+                <a href="https://www.turnerandtownsend.com/"
+                  >Turner &amp; Townsend</a
+                >, <a href="https://www.arup.com/">ARUP</a>, and
+                <a href="https://us.steergroup.com/en-us">Steer</a>, among
+                others.
+              </p>
+            </details>
           </div>
           <div>
             <details>
-            <summary>Q. Is Elon Musk an investor or affiliated with Virgin Hyperloop?</summary>
-            <p class="faq-content">No, there’s no connection with Elon Musk.</p>
+              <summary>
+                Q. Is Elon Musk an investor or affiliated with Virgin Hyperloop?
+              </summary>
+              <p class="faq-content">
+                No, there’s no connection with Elon Musk.
+              </p>
+            </details>
           </div>
           <div>
             <details>
-            <summary>Q. How do you plan to scale up operations around the world?</summary>
-            <p class="faq-content">We aren't just building a hyperloop; we're building a network of public and private partners to scale an integrated supply chain ecosystem. Our business model is based on partnerships that create local jobs and opportunities for those who choose to invest in this technology. We are <a href="https://virginhyperloop.com/progress">working at the highest level of governments around the globe</a> to put in place commercial agreements to make hyperloop a reality.</p>
+              <summary>
+                Q. How do you plan to scale up operations around the world?
+              </summary>
+              <p class="faq-content">
+                We aren't just building a hyperloop; we're building a network of
+                public and private partners to scale an integrated supply chain
+                ecosystem. Our business model is based on partnerships that
+                create local jobs and opportunities for those who choose to
+                invest in this technology. We are
+                <a href="https://virginhyperloop.com/progress"
+                  >working at the highest level of governments around the
+                  globe</a
+                >
+                to put in place commercial agreements to make hyperloop a
+                reality.
+              </p>
+            </details>
           </div>
-            <div>
-              <details>
+          <div>
+            <details>
               <summary>Q. What is hyperloop?</summary>
-              <p class="faq-content">Hyperloop is a new mode of transportation designed to eliminate the barriers of distance and time for both people and freight. It can travel at speeds approaching 700mph, connecting cities like metro stops - and it has zero direct emissions. The journeys can be booked on demand so there’s no wait time or delays. </p>
-            </div>
-            <div>
-              <details>
+              <p class="faq-content">
+                Hyperloop is a new mode of transportation designed to eliminate
+                the barriers of distance and time for both people and freight.
+                It can travel at speeds approaching 700mph, connecting cities
+                like metro stops - and it has zero direct emissions. The
+                journeys can be booked on demand so there’s no wait time or
+                delays.
+              </p>
+            </details>
+          </div>
+          <div>
+            <details>
               <summary>Q. How does hyperloop work?</summary>
-              <p class="faq-content">With hyperloop, vehicles, called pods, accelerate gradually via electric propulsion through a low-pressure tube. The pod floats along the track using magnetic levitation and glides at airline speeds for long distances due to ultra-low aerodynamic drag.</p>
-            </div>
-            <div>
-              <details>
+              <p class="faq-content">
+                With hyperloop, vehicles, called pods, accelerate gradually via
+                electric propulsion through a low-pressure tube. The pod floats
+                along the track using magnetic levitation and glides at airline
+                speeds for long distances due to ultra-low aerodynamic drag.
+              </p>
+            </details>
+          </div>
+          <div>
+            <details>
               <summary>Q. Has hyperloop technology been proven?</summary>
-              <p class="faq-content">Yes.  We’ve successfully run hundreds of tests at our <a href="https://virginhyperloop.com/project/devloop">full-scale prototype</a> in the Nevada desert. On November 8, 2020, the <a href="https://virginhyperloop.com/pegasus">first passengers traveled safely on a hyperloop</a> – making transportation history. This test demonstrated that we can safely put a person in a near-vacuum environment, and our entire safety approach was validated by an independent third party. </p>
-            </div>
-            <div>
-              <details>
+              <p class="faq-content">
+                Yes. We’ve successfully run hundreds of tests at our
+                <a href="https://virginhyperloop.com/project/devloop"
+                  >full-scale prototype</a
+                >
+                in the Nevada desert. On November 8, 2020, the
+                <a href="https://virginhyperloop.com/pegasus"
+                  >first passengers traveled safely on a hyperloop</a
+                >
+                – making transportation history. This test demonstrated that we
+                can safely put a person in a near-vacuum environment, and our
+                entire safety approach was validated by an independent third
+                party.
+              </p>
+            </details>
+          </div>
+          <div>
+            <details>
               <summary>Q. How fast can hyperloop go?</summary>
-              <p class="faq-content">We estimate that the top speed for a passenger vehicle or light cargo will be 670 miles per hour or 1080 kilometers per hour. That is about 3 times faster than high-speed rail and 10-15 times faster than traditional rail. The average speed vehicles travel will vary based on the route and customer requirements.</p>
-            </div>
-            <div>
-              <details>
-              <summary>Q. Why keep the tube at low-pressure and not at a perfect vacuum?</summary>
-              <p class="faq-content">A perfect vacuum would decrease the drag on the vehicle even more, but not significantly. We have already gotten rid of 99.9% of the air in the tube. Lower levels of vacuum than this are important if you are performing scientific experiments, but the cost would not be worthwhile.</p>
-            </div>
-            <div>
-              <details>
-              <summary>Q. How is hyperloop different from high-speed trains?</summary>
-              <p class="faq-content">Hyperloop is an entirely new mode - think the best of trains, planes, and the metro. Hyperloop is on-demand, offering flexible travel schedules with no stops, no transfers, and no weather delays – all at speeds about 3 times faster than high-speed-rail and less cost. Hyperloop is highly efficient, with a smaller environmental impact than high-speed rail because the closed system can be tunneled below or elevated above ground, avoiding dangerous at-grade crossings. The VH system is 100% electric and can reach higher speeds than high-speed rail for less energy due to our proprietary electric motor and low-drag environment. </p>
-            </div>
-            <div>
-              <details>
+              <p class="faq-content">
+                We estimate that the top speed for a passenger vehicle or light
+                cargo will be 670 miles per hour or 1080 kilometers per hour.
+                That is about 3 times faster than high-speed rail and 10-15
+                times faster than traditional rail. The average speed vehicles
+                travel will vary based on the route and customer requirements.
+              </p>
+            </details>
+          </div>
+          <div>
+            <details>
+              <summary>
+                Q. Why keep the tube at low-pressure and not at a perfect
+                vacuum?
+              </summary>
+              <p class="faq-content">
+                A perfect vacuum would decrease the drag on the vehicle even
+                more, but not significantly. We have already gotten rid of 99.9%
+                of the air in the tube. Lower levels of vacuum than this are
+                important if you are performing scientific experiments, but the
+                cost would not be worthwhile.
+              </p>
+            </details>
+          </div>
+          <div>
+            <details>
+              <summary>
+                Q. How is hyperloop different from high-speed trains?
+              </summary>
+              <p class="faq-content">
+                Hyperloop is an entirely new mode - think the best of trains,
+                planes, and the metro. Hyperloop is on-demand, offering flexible
+                travel schedules with no stops, no transfers, and no weather
+                delays – all at speeds about 3 times faster than high-speed-rail
+                and less cost. Hyperloop is highly efficient, with a smaller
+                environmental impact than high-speed rail because the closed
+                system can be tunneled below or elevated above ground, avoiding
+                dangerous at-grade crossings. The VH system is 100% electric and
+                can reach higher speeds than high-speed rail for less energy due
+                to our proprietary electric motor and low-drag environment.
+              </p>
+            </details>
+          </div>
+          <div>
+            <details>
               <summary>Q. Is hyperloop safe?</summary>
-              <p class="faq-content">Fast, effortless journeys go hand-in-hand with journeys where everything works reliably without interference, and where all passengers feel comfortable and safe. The Virgin Hyperloop is designed to be inherently safer than other modes, with multiple redundancies in place. Our system operates autonomously in an enclosed tube and is not susceptible to weather delays, accidents from at-grade crossings, human error, or power outages. Our proprietary high-speed switching architecture eliminates unsafe track configurations and moving trackside parts, a failure point of traditional rail with mechanical switches.</p>
-            </div>
-            <div>
-              <details>
+              <p class="faq-content">
+                Fast, effortless journeys go hand-in-hand with journeys where
+                everything works reliably without interference, and where all
+                passengers feel comfortable and safe. The Virgin Hyperloop is
+                designed to be inherently safer than other modes, with multiple
+                redundancies in place. Our system operates autonomously in an
+                enclosed tube and is not susceptible to weather delays,
+                accidents from at-grade crossings, human error, or power
+                outages. Our proprietary high-speed switching architecture
+                eliminates unsafe track configurations and moving trackside
+                parts, a failure point of traditional rail with mechanical
+                switches.
+              </p>
+            </details>
+          </div>
+          <div>
+            <details>
               <summary>Q. How do you plan to get hyperloop certified?</summary>
-              <p class="faq-content">As new mode, we have to prove our safety case to regulators and work with them to develop a regulatory framework, so passengers can ride the hyperloop in years not decades. We are encouraged by the support we are seeing at the local and federal level around the world to support hyperloop certification based on the fundamentals of safe operating that are already standard practice. Our goal is to achieve safety certification by 2025. We are on track to meet this goal and have unveiled West Virginia as the home of the world’s first <a href="https://virginhyperloop.com/project/hcc">Hyperloop Certification Center (HCC)</a>. This announcement builds off of significant progress around the world on the regulatory front. In July 2020, the US Department of Transportation (USDOT) Secretary Elaine Chao and the Non-Traditional and Emerging Transportation Technology (NETT) Council unveiled the <a href="https://virginhyperloop.com/press/guidance-document-regulation">guidance document</a> on a clear regulatory framework for hyperloop in the United States. In the EU, the European Commission (EC) has just released the  Sustainable and Smart Mobility Strategy and hyperloop is explicitly identified as a game-changing mobility technology. We are also working closely with the European Commission’s Directorate-General for Mobility and Transport (DGMOVE) and Shift2Rail to deliver the next wave of sustainable mobility through robust regulatory standards. In India, the Principal Scientific Advisor (PSA) to the Government of India, Prof. Vijayraghavan, has set up an independent committee called the Consultative Group on Future of Transportation (CGFT) to explore the regulatory path for hyperloop. For more, visit our <a href="https://virginhyperloop.com/project/regulatory-progress">regulatory progress pages</a>. </p>
-            </div>
-            <div>
-              <details>
-              <summary>Q. What will it feel like to ride hyperloop? </summary>
-              <p class="faq-content">While flying through a tube at more than 1000km/h might seem like a thrill ride, the truth is we are able to mitigate any uncomfortable acceleration forces within our controlled environment. The journey will be so smooth, you could sip a coffee the whole time without spilling a single drop. Normal acceleration and deceleration of 0.20 Gs will feel similar to a train. As a comparison, flooring a typical sedan gives between 0.4-0.5 Gs and commercial airplanes see 0.3-0.5Gs depending on the plane and load.</p>
-            </div>
-            <div>
-              <details>
-              <summary>Q. What happens if there's a sudden breach in the tube?</summary>
-              <p class="faq-content">Pods will continue to travel safely to the next portal even with a large breach. Our response to a breach would be to intentionally repressurize the tube with small valves places along the route length while engaging pod brakes to safely bringing all pods to rest before it is deemed safe to continue to the next portal. A sustained leak could impact performance (speed) but would not pose a safety issue due to vehicle and system architectural design choices. This assessment is based in solid understanding and analysis of the complex vehicle load behaviors during such an event.</p>
-            </div>
-            <div>
-              <details>
+              <p class="faq-content">
+                As new mode, we have to prove our safety case to regulators and
+                work with them to develop a regulatory framework, so passengers
+                can ride the hyperloop in years not decades. We are encouraged
+                by the support we are seeing at the local and federal level
+                around the world to support hyperloop certification based on the
+                fundamentals of safe operating that are already standard
+                practice. Our goal is to achieve safety certification by 2025.
+                We are on track to meet this goal and have unveiled West
+                Virginia as the home of the world’s first
+                <a href="https://virginhyperloop.com/project/hcc"
+                  >Hyperloop Certification Center (HCC)</a
+                >. This announcement builds off of significant progress around
+                the world on the regulatory front. In July 2020, the US
+                Department of Transportation (USDOT) Secretary Elaine Chao and
+                the Non-Traditional and Emerging Transportation Technology
+                (NETT) Council unveiled the
+                <a
+                  href="https://virginhyperloop.com/press/guidance-document-regulation"
+                  >guidance document</a
+                >
+                on a clear regulatory framework for hyperloop in the United
+                States. In the EU, the European Commission (EC) has just
+                released the Sustainable and Smart Mobility Strategy and
+                hyperloop is explicitly identified as a game-changing mobility
+                technology. We are also working closely with the European
+                Commission’s Directorate-General for Mobility and Transport
+                (DGMOVE) and Shift2Rail to deliver the next wave of sustainable
+                mobility through robust regulatory standards. In India, the
+                Principal Scientific Advisor (PSA) to the Government of India,
+                Prof. Vijayraghavan, has set up an independent committee called
+                the Consultative Group on Future of Transportation (CGFT) to
+                explore the regulatory path for hyperloop. For more, visit our
+                <a
+                  href="https://virginhyperloop.com/project/regulatory-progress"
+                  >regulatory progress pages</a
+                >.
+              </p>
+            </details>
+          </div>
+          <div>
+            <details>
+              <summary>Q. What will it feel like to ride hyperloop?</summary>
+              <p class="faq-content">
+                While flying through a tube at more than 1000km/h might seem
+                like a thrill ride, the truth is we are able to mitigate any
+                uncomfortable acceleration forces within our controlled
+                environment. The journey will be so smooth, you could sip a
+                coffee the whole time without spilling a single drop. Normal
+                acceleration and deceleration of 0.20 Gs will feel similar to a
+                train. As a comparison, flooring a typical sedan gives between
+                0.4-0.5 Gs and commercial airplanes see 0.3-0.5Gs depending on
+                the plane and load.
+              </p>
+            </details>
+          </div>
+          <div>
+            <details>
+              <summary>
+                Q. What happens if there's a sudden breach in the tube?
+              </summary>
+              <p class="faq-content">
+                Pods will continue to travel safely to the next portal even with
+                a large breach. Our response to a breach would be to
+                intentionally repressurize the tube with small valves places
+                along the route length while engaging pod brakes to safely
+                bringing all pods to rest before it is deemed safe to continue
+                to the next portal. A sustained leak could impact performance
+                (speed) but would not pose a safety issue due to vehicle and
+                system architectural design choices. This assessment is based in
+                solid understanding and analysis of the complex vehicle load
+                behaviors during such an event.
+              </p>
+            </details>
+          </div>
+          <div>
+            <details>
               <summary>Q. Is hyperloop sustainable?</summary>
-              <p class="faq-content">Without a massive leap forward, pollution from the transportation industry is expected to almost double by 2050 - well above the carbon budget. By combining an ultra-efficient electric motor, magnetic levitation, and a low-drag environment, the VH system can reach airline speeds for 5-10x less energy (depends on route length) and can go  faster than high-speed rail using less energy. In regions like the Middle East, we could <a href="https://virginhyperloop.com/press/hyperloop-off-grid-middle-east">power the system completely by solar panels</a> which cover the tube. As fighting against climate change becomes an existential issue for cities across the globe, hyperloop will create a new, shared, electric mobility model for helping to permanently reform an industry with some of the world’s highest carbon emissions.</p>
-            </div>
-            <div>
-              <details>
-              <summary>Q. How much energy does hyperloop use? </summary>
-              <p class="faq-content">We are designing Virgin Hyperloop to be more efficient than other modes of transportation. Modern jetliners use up to 10 times the energy we use per passenger-mile over the entire journey. We can cruise at 500 miles per hour for less energy (per passenger) than an electric car doing 60 miles per hour. At peak speed, the VH system consumes approximately 75 watt hours per passenger kilometer (Wh/pax-km). To put this in perspective, the fastest conventional maglev train travels at about half our speed and consumes 33% more energy.</p>
-            </div>
-            <div>
-              <details>
+              <p class="faq-content">
+                Without a massive leap forward, pollution from the
+                transportation industry is expected to almost double by 2050 -
+                well above the carbon budget. By combining an ultra-efficient
+                electric motor, magnetic levitation, and a low-drag environment,
+                the VH system can reach airline speeds for 5-10x less energy
+                (depends on route length) and can go faster than high-speed rail
+                using less energy. In regions like the Middle East, we could
+                <a
+                  href="https://virginhyperloop.com/press/hyperloop-off-grid-middle-east"
+                  >power the system completely by solar panels</a
+                >
+                which cover the tube. As fighting against climate change becomes
+                an existential issue for cities across the globe, hyperloop will
+                create a new, shared, electric mobility model for helping to
+                permanently reform an industry with some of the world’s highest
+                carbon emissions.
+              </p>
+            </details>
+          </div>
+          <div>
+            <details>
+              <summary>Q. How much energy does hyperloop use?</summary>
+              <p class="faq-content">
+                We are designing Virgin Hyperloop to be more efficient than
+                other modes of transportation. Modern jetliners use up to 10
+                times the energy we use per passenger-mile over the entire
+                journey. We can cruise at 500 miles per hour for less energy
+                (per passenger) than an electric car doing 60 miles per hour. At
+                peak speed, the VH system consumes approximately 75 watt hours
+                per passenger kilometer (Wh/pax-km). To put this in perspective,
+                the fastest conventional maglev train travels at about half our
+                speed and consumes 33% more energy.
+              </p>
+            </details>
+          </div>
+          <div>
+            <details>
               <summary>Q. Where will hyperloop get its power?</summary>
-              <p class="faq-content">Our system is 100% electric with zero direct emissions. We're energy-agnostic. Our system can draw power from whichever energy sources are available along the route and support a transition to a renewable energy-powered future.  In regions like the Middle East, we can completely power the system with solar panels which cover the tube.  </p>
-            </div>
-            <div>
-              <details>
+              <p class="faq-content">
+                Our system is 100% electric with zero direct emissions. We're
+                energy-agnostic. Our system can draw power from whichever energy
+                sources are available along the route and support a transition
+                to a renewable energy-powered future. In regions like the Middle
+                East, we can completely power the system with solar panels which
+                cover the tube.
+              </p>
+            </details>
+          </div>
+          <div>
+            <details>
               <summary>Q. How much noise does hyperloop make?</summary>
-              <p class="faq-content">It’s similar those new electric vehicles that are so quiet they need to create noise to indicate movement. With hyperloop, we eliminate sources of mechanical noise, like wheels on track, and we actually have a sound barrier inherent in our tube design</p>
-            </div>
-            <div>
-              <details>
+              <p class="faq-content">
+                It’s similar those new electric vehicles that are so quiet they
+                need to create noise to indicate movement. With hyperloop, we
+                eliminate sources of mechanical noise, like wheels on track, and
+                we actually have a sound barrier inherent in our tube design
+              </p>
+            </details>
+          </div>
+          <div>
+            <details>
               <summary>Q. Can hyperloop be used for cargo?</summary>
-              <p class="faq-content"><a href="https://www.dpworld.com/en/smart-trade/cargospeed">DP World Cargospeed</a> is a global brand for hyperloop-enabled cargo systems operated by DP World and enabled by Virgin Hyperloop technology. These systems will deliver freight at the speed of flight and closer to the cost of trucking for fast, sustainable, and efficient delivery of palletized cargo.</p>
-            </div>
-            <div>
-              <details>
-              <summary>Q. What type of cargo would a hyperloop system transport?</summary>
-              <p class="faq-content">The focus would be on high-priority, on-demand goods – fresh food, medical supplies, electronics, and more.</p>
-            </div>
-            <div>
-              <details>
+              <p class="faq-content">
+                <a href="https://www.dpworld.com/en/smart-trade/cargospeed"
+                  >DP World Cargospeed</a
+                >
+                is a global brand for hyperloop-enabled cargo systems operated
+                by DP World and enabled by Virgin Hyperloop technology. These
+                systems will deliver freight at the speed of flight and closer
+                to the cost of trucking for fast, sustainable, and efficient
+                delivery of palletized cargo.
+              </p>
+            </details>
+          </div>
+          <div>
+            <details>
+              <summary>
+                Q. What type of cargo would a hyperloop system transport?
+              </summary>
+              <p class="faq-content">
+                The focus would be on high-priority, on-demand goods – fresh
+                food, medical supplies, electronics, and more.
+              </p>
+            </details>
+          </div>
+          <div>
+            <details>
               <summary>Q. How can hyperloop help transform logistics?</summary>
-              <p class="faq-content">With <a href="https://www.dpworld.com/en/smart-trade/cargospeed">DP World Cargospeed</a>, deliveries can be completed in hours versus days with greater reliability and fewer delays. It will expand freight transportation capacity by connecting with existing modes of road, rail, ports, and air transport, and will provide greater connectivity with manufacturing parks, economic zones, distribution centers, and regional urban centers. This can shrink inventory lead times, help reduce finished goods inventory, and cut required warehouse space and cost by 25%. DP World Cargospeed networks can also enable just-in-time, agile manufacturing practices. </p>
-            </div>
-            <div>
-              <details>
-              <summary>Q. Will the first hyperloops be passenger or cargo systems?</summary>
-              <p class="faq-content">The Virgin Hyperloop is unique in that it doesn’t need to be passenger-only or cargo-only. We are designing a mixed-use system that fully utilizes system capacity while maximizing economic and social benefits. However, it is possible to run cargo commercial operations while certification and regulation are still ongoing for passenger use.</p>
-            </div>
-          <div>
-            <details>
-            <summary>Q. When will hyperloop systems be ready for cargo and passengers?</summary>
-            <p class="faq-content">We are working with the <a href="https://virginhyperloop.com/progress">most visionary governments around the world</a> to make sure you can ride the hyperloop in years, not decades. Our goal is to have operational systems in the late 2020s. Our ability to meet that goal will depend on how fast the regulatory and statutory processes move. </p>
+              <p class="faq-content">
+                With
+                <a href="https://www.dpworld.com/en/smart-trade/cargospeed"
+                  >DP World Cargospeed</a
+                >, deliveries can be completed in hours versus days with greater
+                reliability and fewer delays. It will expand freight
+                transportation capacity by connecting with existing modes of
+                road, rail, ports, and air transport, and will provide greater
+                connectivity with manufacturing parks, economic zones,
+                distribution centers, and regional urban centers. This can
+                shrink inventory lead times, help reduce finished goods
+                inventory, and cut required warehouse space and cost by 25%. DP
+                World Cargospeed networks can also enable just-in-time, agile
+                manufacturing practices.
+              </p>
+            </details>
           </div>
           <div>
             <details>
-            <summary>Q. Where will the first hyperloop get built?</summary>
-            <p class="faq-content">We are working with visionary governments and partners around the world to make hyperloop a reality today. To learn more about our projects around the world, visit our <a href="https://virginhyperloop.com/progress">progress page</a>.</p>
+              <summary>
+                Q. Will the first hyperloops be passenger or cargo systems?
+              </summary>
+              <p class="faq-content">
+                The Virgin Hyperloop is unique in that it doesn’t need to be
+                passenger-only or cargo-only. We are designing a mixed-use
+                system that fully utilizes system capacity while maximizing
+                economic and social benefits. However, it is possible to run
+                cargo commercial operations while certification and regulation
+                are still ongoing for passenger use.
+              </p>
+            </details>
           </div>
           <div>
             <details>
-            <summary>Q. How much will hyperloop cost to build and operate?</summary>
-            <p class="faq-content">Capital and operating costs will range widely based on the route. We <a href="https://virginhyperloop.com/press/first-us-hyperloop-feasibility-study">recently released a study</a> that showed our linear costs are 60-70% that of high-speed rail projects. In addition, we expect the operational costs to be significantly lower than existing forms of transportation.</p>
+              <summary>
+                Q. When will hyperloop systems be ready for cargo and
+                passengers?
+              </summary>
+              <p class="faq-content">
+                We are working with the
+                <a href="https://virginhyperloop.com/progress"
+                  >most visionary governments around the world</a
+                >
+                to make sure you can ride the hyperloop in years, not decades.
+                Our goal is to have operational systems in the late 2020s. Our
+                ability to meet that goal will depend on how fast the regulatory
+                and statutory processes move.
+              </p>
+            </details>
           </div>
           <div>
             <details>
-            <summary>Q. How much will hyperloop cost to ride? </summary>
-            <p class="faq-content">It’s simple – if it’s not affordable, people won't use it. We are looking to build something that will expand opportunities for the masses, so they can live in one city with their family and work in another. Currently, that kind of high-speed transport is not feasible for most people. The exact ticket price will vary for each route, but a <a href="https://virginhyperloop.com/press/first-us-hyperloop-feasibility-study">recent study</a> showed that riding a hyperloop in Missouri could cost less than the gas needed to drive.</p>
+              <summary>Q. Where will the first hyperloop get built?</summary>
+              <p class="faq-content">
+                We are working with visionary governments and partners around
+                the world to make hyperloop a reality today. To learn more about
+                our projects around the world, visit our
+                <a href="https://virginhyperloop.com/progress">progress page</a
+                >.
+              </p>
+            </details>
           </div>
           <div>
             <details>
-            <summary>Q. How are hyperloop routes selected?</summary>
-            <p class="faq-content">We are in the business of serving local needs, not the other way around. Public and private support is key. In some cases, we will respond to solicited bids with partners when we feel the technology matches the project’s objectives. In other cases, we will make an unsolicited bid for a project when we see that hyperloop could offer a unique solution to market needs. </p>
+              <summary>
+                Q. How much will hyperloop cost to build and operate?
+              </summary>
+              <p class="faq-content">
+                Capital and operating costs will range widely based on the
+                route. We
+                <a
+                  href="https://virginhyperloop.com/press/first-us-hyperloop-feasibility-study"
+                  >recently released a study</a
+                >
+                that showed our linear costs are 60-70% that of high-speed rail
+                projects. In addition, we expect the operational costs to be
+                significantly lower than existing forms of transportation.
+              </p>
+            </details>
           </div>
           <div>
             <details>
-            <summary>Q. What is the process for getting a passenger route up and running?</summary>
-            <p class="faq-content">While the technology is different, the process for building a hyperloop is similar to that of building a highway, railway, or any other type of linear infrastructure. The first stage is project development. This phase includes feasibility studies, and then more detailed engineering reports and environmental impact studies. Once a project is approved to move forward, a consortium is formed to finance and deliver on the project. </p>
+              <summary>Q. How much will hyperloop cost to ride?</summary>
+              <p class="faq-content">
+                It’s simple – if it’s not affordable, people won't use it. We
+                are looking to build something that will expand opportunities
+                for the masses, so they can live in one city with their family
+                and work in another. Currently, that kind of high-speed
+                transport is not feasible for most people. The exact ticket
+                price will vary for each route, but a
+                <a
+                  href="https://virginhyperloop.com/press/first-us-hyperloop-feasibility-study"
+                  >recent study</a
+                >
+                showed that riding a hyperloop in Missouri could cost less than
+                the gas needed to drive.
+              </p>
+            </details>
           </div>
           <div>
             <details>
-            <summary>Q. How much land does hyperloop require?</summary>
-            <p class="faq-content">Many infrastructure projects succeed or fail based on right-of-way issues. We are designing a system that requires only about half the right-of-way as high-speed rail and can more easily adapt to existing right-of-ways. At high speeds, the VH system has a 4.5 times tighter turn radius compared to high-speed rail and can climb grades that are 6 times steeper, reducing the disturbance at crossings. Portals will be purposely integrated into and support existing communities and landscapes. Low noise levels will expand opportunities to build hyperloops closer to the city center.</p>
+              <summary>Q. How are hyperloop routes selected?</summary>
+              <p class="faq-content">
+                We are in the business of serving local needs, not the other way
+                around. Public and private support is key. In some cases, we
+                will respond to solicited bids with partners when we feel the
+                technology matches the project’s objectives. In other cases, we
+                will make an unsolicited bid for a project when we see that
+                hyperloop could offer a unique solution to market needs.
+              </p>
+            </details>
           </div>
           <div>
             <details>
-            <summary>Q. With the focus on connecting cities, how will hyperloop support rural communities?</summary>
-            <p class="faq-content">Hyperloop also holds enormous promise for rural communities. Virgin Hyperloop systems can be built below or above ground, which means no one’s farm needs to be cut in half. Our system enables rural areas to retain residents, who can now have more access to urban job centers, educational opportunities, and health care facilities. Additionally, hyperloop could enable freight distribution centers to be placed in rural areas, leading to job growth and industrial clusters. After a system is built, there is the opportunity to add additional on and off-ramps, supporting a greater number of people along the route.</p>
+              <summary>
+                Q. What is the process for getting a passenger route up and
+                running?
+              </summary>
+              <p class="faq-content">
+                While the technology is different, the process for building a
+                hyperloop is similar to that of building a highway, railway, or
+                any other type of linear infrastructure. The first stage is
+                project development. This phase includes feasibility studies,
+                and then more detailed engineering reports and environmental
+                impact studies. Once a project is approved to move forward, a
+                consortium is formed to finance and deliver on the project.
+              </p>
+            </details>
           </div>
           <div>
             <details>
-            <summary>Q. How will hyperloop projects be financed? </summary>
-            <p class="faq-content">Transportation infrastructure has traditionally relied on extensive government funding. This is because the benefits of clean, safe, and efficient transportation are enjoyed by the entire community, not just the user buying a ticket. However, most existing mass transportation modes are unprofitable and hindered by existing infrastructure built in the past century or by legacy systems. We want to change that and are focused on public-private partnerships. By developing a new mode of transportation from scratch, we're able to leverage technological developments that have occurred in the last century, especially the IT revolution. We're able to keep maintenance costs low, energy efficiency high, and transport tens of thousands of passengers per hour. This keeps margins and accessibility high, contributing to more financially attractive returns than if the corridor was served by existing modes. These benefits aren’t just hypothetical. While this is an exceptional case due to high demand, a third-party evaluation found that our Mumbai-Pune Hyperloop Project could be funded 100% by private capital. In the U.S. we see enormous potential to attract investment from the private sector, leveraging public investments. Involving government stakeholders as well as potential private investors early in the project development process is critical. </p>
+              <summary>Q. How much land does hyperloop require?</summary>
+              <p class="faq-content">
+                Many infrastructure projects succeed or fail based on
+                right-of-way issues. We are designing a system that requires
+                only about half the right-of-way as high-speed rail and can more
+                easily adapt to existing right-of-ways. At high speeds, the VH
+                system has a 4.5 times tighter turn radius compared to
+                high-speed rail and can climb grades that are 6 times steeper,
+                reducing the disturbance at crossings. Portals will be purposely
+                integrated into and support existing communities and landscapes.
+                Low noise levels will expand opportunities to build hyperloops
+                closer to the city center.
+              </p>
+            </details>
+          </div>
+          <div>
+            <details>
+              <summary>
+                Q. With the focus on connecting cities, how will hyperloop
+                support rural communities?
+              </summary>
+              <p class="faq-content">
+                Hyperloop also holds enormous promise for rural communities.
+                Virgin Hyperloop systems can be built below or above ground,
+                which means no one’s farm needs to be cut in half. Our system
+                enables rural areas to retain residents, who can now have more
+                access to urban job centers, educational opportunities, and
+                health care facilities. Additionally, hyperloop could enable
+                freight distribution centers to be placed in rural areas,
+                leading to job growth and industrial clusters. After a system is
+                built, there is the opportunity to add additional on and
+                off-ramps, supporting a greater number of people along the
+                route.
+              </p>
+            </details>
+          </div>
+          <div>
+            <details>
+              <summary>Q. How will hyperloop projects be financed?</summary>
+              <p class="faq-content">
+                Transportation infrastructure has traditionally relied on
+                extensive government funding. This is because the benefits of
+                clean, safe, and efficient transportation are enjoyed by the
+                entire community, not just the user buying a ticket. However,
+                most existing mass transportation modes are unprofitable and
+                hindered by existing infrastructure built in the past century or
+                by legacy systems. We want to change that and are focused on
+                public-private partnerships. By developing a new mode of
+                transportation from scratch, we're able to leverage
+                technological developments that have occurred in the last
+                century, especially the IT revolution. We're able to keep
+                maintenance costs low, energy efficiency high, and transport
+                tens of thousands of passengers per hour. This keeps margins and
+                accessibility high, contributing to more financially attractive
+                returns than if the corridor was served by existing modes. These
+                benefits aren’t just hypothetical. While this is an exceptional
+                case due to high demand, a third-party evaluation found that our
+                Mumbai-Pune Hyperloop Project could be funded 100% by private
+                capital. In the U.S. we see enormous potential to attract
+                investment from the private sector, leveraging public
+                investments. Involving government stakeholders as well as
+                potential private investors early in the project development
+                process is critical.
+              </p>
+            </details>
           </div>
         </div>
       </div>
     </div>
-        <!--========== FOOTER ==========-->
-        <footer class="footer section bd-container">
-          <div class="footer__container bd-grid">
-              <div class="footer__content">
-                  <a href="#" class="footer__logo">Hyperloop</a>
-                  <span class="footer__description">Fastest Transport</span>
-                  <div>
-                      <a href="https://www.facebook.com/VirginHyperloop/" class="footer__social"><i class='bx bxl-facebook'></i></a>
-                      <a href="https://www.instagram.com/virginhyperloop/" class="footer__social"><i class='bx bxl-instagram'></i></a>
-                      <a href="https://twitter.com/virginhyperloop" class="footer__social"><i class='bx bxl-twitter'></i></a>
-                      <a href="https://www.youtube.com/virginhyperloop" class="footer__social"><i class='bx bxl-youtube'></i></a>
-                      <a href="https://www.linkedin.com/company/virgin-hyperloop" class="footer__social"><i class='bx bxl-linkedin'></i></a>
-                  </div>
-              </div>
-
-              <div class="footer__content">
-                  <h3 class="footer__title">Services</h3>
-                  <ul>
-                      <li><a href="#" class="footer__link">Reserve your spot</a></li>
-                  </ul>
-              </div>
-
-              <div class="footer__content">
-                  <h3 class="footer__title">Information</h3>
-                  <ul>
-                      <li><a href="#" class="footer__link">Event</a></li>
-                      <li><a href="#" class="footer__link">Contact us</a></li>
-                      <li><a href="#" class="footer__link">Privacy policy</a></li>
-                      <li><a href="#" class="footer__link">Terms of services</a></li>
-                  </ul>
-              </div>
-
-              <div class="footer__content">
-                  <h3 class="footer__title">Adress</h3>
-                  <ul>
-                      <li>2159 Bay Street</li>
-                      <li>Los Angeles</li>
-                      <li>California</li>
-                      <li>United States</li>
-                  </ul>
-              </div>
+    <!--========== FOOTER ==========-->
+    <footer class="footer section bd-container">
+      <div class="footer__container bd-grid">
+        <div class="footer__content">
+          <a href="#" class="footer__logo">Hyperloop</a>
+          <span class="footer__description">Fastest Transport</span>
+          <div>
+            <a
+              href="https://www.facebook.com/VirginHyperloop/"
+              class="footer__social"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/virginhyperloop/"
+              class="footer__social"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a href="https://twitter.com/virginhyperloop" class="footer__social"
+              ><i class="bx bxl-twitter"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/virginhyperloop"
+              class="footer__social"
+              ><i class="bx bxl-youtube"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/company/virgin-hyperloop"
+              class="footer__social"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
           </div>
+        </div>
 
-          <p class="footer__copy">&#169; 2021 Virginhyperloop All right reserved</p>
-      </footer>
+        <div class="footer__content">
+          <h3 class="footer__title">Experience</h3>
+          <ul>
+            <li><a href="#" class="footer__link"></a></li>
+          </ul>
+        </div>
 
-      <!--========== SCROLL REVEAL ==========-->
-      <script src="https://unpkg.com/scrollreveal"></script>
+        <div class="footer__content">
+          <h3 class="footer__title">Information</h3>
+          <ul>
+            <li><a href="#" class="footer__link">Event</a></li>
+            <li><a href="#" class="footer__link">Contact us</a></li>
+            <li><a href="#" class="footer__link">Privacy policy</a></li>
+            <li><a href="#" class="footer__link">Terms of services</a></li>
+          </ul>
+        </div>
 
-      <!--========== MAIN JS ==========-->
-      <script src="assets/js/main.js"></script>
+        <div class="footer__content">
+          <h3 class="footer__title">Adress</h3>
+          <ul>
+            <li>2159 Bay Street</li>
+            <li>Los Angeles</li>
+            <li>California</li>
+            <li>United States</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="footer__copy">&#169; 2021 Virginhyperloop All right reserved</p>
+    </footer>
+
+    <!--========== SCROLL REVEAL ==========-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
