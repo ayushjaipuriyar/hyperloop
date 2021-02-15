@@ -1,117 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!--========== BOX ICONS ==========-->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <!--========== BOX ICONS ==========-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
-        <!--========== CSS ==========-->
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="stylesheet" href="assets/css/font-awesome.css">
-        <title>Hyperloop</title>
-    </head>
-    <body>
-      
-        
-        <!--========== HEADER ==========-->
-        <header class="l-header" id="header">
-            <nav class="nav bd-container">
-                <a href="/index.html"> <svg class="loop"> <path stroke="#ededed" id="outline" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" 
-                    d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 				c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" />
-              <path id="outline-bg" opacity="0.05" fill="none" stroke="#ededed" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" 
-                    d="				M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 				c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" />
-                            </svg>
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.css" />
+    <title>Hyperloop</title>
+  </head>
+  <body>
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+      <nav class="nav bd-container">
+        <a href="/index.html">
+          <svg class="loop">
+            <path
+              stroke="#ededed"
+              id="outline"
+              fill="none"
+              stroke-width="4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-miterlimit="10"
+              d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 				c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z"
+            />
+            <path
+              id="outline-bg"
+              opacity="0.05"
+              fill="none"
+              stroke="#ededed"
+              stroke-width="4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-miterlimit="10"
+              d="				M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 				c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z"
+            />
+          </svg>
+        </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="./index.html#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="./index.html#services" class="nav__link">Services</a>
+            </li>
+            <li class="nav__item">
+              <a href="./index.html#contact" class="nav__link">Contact us</a>
+            </li>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="./index.html" class="nav__link active-link">Home</a></li>
-                        <li class="nav__item"><a href="./index.html#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="./index.html#services" class="nav__link">Services</a></li>
-                        <li class="nav__item"><a href="./index.html#contact" class="nav__link">Contact us</a></li>
+            <li><i class="bx bx-moon change-theme" id="theme-button"></i></li>
 
-                        <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
-                    </ul>
-                </div>
+            <a href="./cart.html">
+              <i class="fa fa-shopping-cart" id="cart">
+                <span class="counter"></span>
+              </i>
+            </a>
+          </ul>
+        </div>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
 
-        <main class="l-main">
-            <!--======HISTORY BODY==========-->
-        <section class="about section bd-container" id="about">
-            <div class="about__container  bd-grid">
-                <div class="about__data">
-                    <span class="section-subtitle about__initial">History of Hyperloop System</span>
-                    <h2 class="section-title about__initial">FIRST PROPOSED BY Elon Musk</h2>
-                    <p class="about__description">At its core, hyperloop is all about removing the two things that slow down regular vehicles: friction and air resistance. To do away with the former, you make the pod hover above its track, like a magnetic levitation train. Musk originally suggested doing this with air bearings, little jets of air on the bottom of the pod. Think of air hockey, he said, but where the air comes out of the puck instead of the table. Today, most hyperloop engineers have decided instead to rely on passive magnetic levitation. Where standard maglev systems are power hungry and expensive, this system uses an array of permanent magnets on the vehicle. When those magnets move over conductive arrays in the track, they create a magnetic field that pushes the pod up, no current required.</p>
-                    <p class="about__description">A complementary magnet system (think of two magnets pushing off one another) would give the pods a push every few miles or so—the near total lack of friction and air resistance means you don’t need a constant propulsion system.
-                        As for air resistance, that’s where the tube comes in. (Yes, tubes also just feel like the future, but that’s not the point.) The tubes enclose the space through which the pods move, so you can use vacuums to hoover out nearly all the air—leaving so little that the physics are like being at an altitude of 200,000 feet. And so, like a cruising airplane, a hyperloop needs only a little bit of energy to maintain the pods’ speed, because there’s less stuff to push through. More speed with less power gets you to where you’re going faster, greener, and—depending on energy costs—maybe cheaper too.</p>
-                    </div>
-                        
-                    <img src='./assets/img/elon.jpg' id="about__img">
-            </div>
-        </section>
-        </main>
-        
+    <main class="l-main">
+      <!--======HISTORY BODY==========-->
+      <section class="about section bd-container" id="about">
+        <div class="about__container bd-grid">
+          <div class="about__data">
+            <span class="section-subtitle about__initial"
+              >History of Hyperloop System</span
+            >
+            <h2 class="section-title about__initial">
+              FIRST PROPOSED BY Elon Musk
+            </h2>
+            <p class="about__description">
+              At its core, hyperloop is all about removing the two things that
+              slow down regular vehicles: friction and air resistance. To do
+              away with the former, you make the pod hover above its track, like
+              a magnetic levitation train. Musk originally suggested doing this
+              with air bearings, little jets of air on the bottom of the pod.
+              Think of air hockey, he said, but where the air comes out of the
+              puck instead of the table. Today, most hyperloop engineers have
+              decided instead to rely on passive magnetic levitation. Where
+              standard maglev systems are power hungry and expensive, this
+              system uses an array of permanent magnets on the vehicle. When
+              those magnets move over conductive arrays in the track, they
+              create a magnetic field that pushes the pod up, no current
+              required.
+            </p>
+            <p class="about__description">
+              A complementary magnet system (think of two magnets pushing off
+              one another) would give the pods a push every few miles or so—the
+              near total lack of friction and air resistance means you don’t
+              need a constant propulsion system. As for air resistance, that’s
+              where the tube comes in. (Yes, tubes also just feel like the
+              future, but that’s not the point.) The tubes enclose the space
+              through which the pods move, so you can use vacuums to hoover out
+              nearly all the air—leaving so little that the physics are like
+              being at an altitude of 200,000 feet. And so, like a cruising
+              airplane, a hyperloop needs only a little bit of energy to
+              maintain the pods’ speed, because there’s less stuff to push
+              through. More speed with less power gets you to where you’re going
+              faster, greener, and—depending on energy costs—maybe cheaper too.
+            </p>
+          </div>
 
-        
+          <img src="./assets/img/elon.jpg" id="about__img" />
+        </div>
+      </section>
+      <!--========== MENU ==========-->
+      <section class="menu section bd-container" id="menu">
+        <span class="section-subtitle">Worlwide</span>
+        <h2 class="section-title">Regulatory Progress</h2>
 
-        <!--========== FOOTER ==========-->
-        <footer class="footer section bd-container">
-            <div class="footer__container bd-grid">
-                <div class="footer__content">
-                    <a href="#" class="footer__logo">Hyperloop</a>
-                    <span class="footer__description">Fastest Transport</span>
-                    <div>
-                        <a href="#" class="footer__social"><i class='bx bxl-facebook'></i></a>
-                        <a href="#" class="footer__social"><i class='bx bxl-instagram'></i></a>
-                        <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
-                    </div>
-                </div>
+        <div class="menu__container bd-grid">
+          <div class="menu__content">
+            <img
+              src="//images.ctfassets.net/fl71vrk2b705/7J44EEz8mvI742mXvtwUXX/fe4e926c85710dfbc847cd4d1731bbcb/dc_reg.png?fm=jpg&q=85"
+              alt=""
+              class="menu__img"
+            />
+            <h3 class="menu__name">Barbecue salad</h3>
+            <span class="menu__detail"
+              >Within the next twelve months we will announce the location of
+              our hyperloop certification track in the U.S., a critical step to
+              take hyperloop from a technology innovation to a transportation
+              innovation. This announcement builds on momentum at the federal
+              level to create a “regulatory home” for hyperloop. In July 2020,
+              the US Department of Transportation (USDOT) and the
+              Non-Traditional and Emerging Transportation Technology (NETT)
+              Council unveiled the guidance document on a clear regulatory
+              framework for hyperloop in the United States. This historic
+              announcement not only provides a pathway for hyperloop regulation
+              and deployment in the US, but also establishes hyperloop’s
+              eligibility for federal funding for projects.</span
+            >
+          </div>
 
-                <div class="footer__content">
-                    <h3 class="footer__title">Services</h3>
-                    <ul>
-                        <li><a href="#" class="footer__link">Delivery</a></li>
-                        <li><a href="#" class="footer__link">Pricing</a></li>
-                        <li><a href="#" class="footer__link">Fast food</a></li>
-                        <li><a href="#" class="footer__link">Reserve your spot</a></li>
-                    </ul>
-                </div>
+          <div class="menu__content">
+            <img
+              src="//images.ctfassets.net/fl71vrk2b705/2bjI8nmg3fE4mep0HOVUl/7757439ac01d7e0cdd4418938afd42e5/dg_move.png?fm=jpg&q=85"
+              alt=""
+              class="menu__img"
+            />
+            <h3 class="menu__name">European Union</h3>
+            <span class="menu__detail"
+              >The European Union is a widely respected leader in sustainable
+              mobility. By midcentury, it’s strategy is to slash greenhouse gas
+              emissions from transport by at least 60% compared to the year
+              1990. Today, we are working closely with the European Commission’s
+              Directorate-General for Mobility and Transport (DGMOVE) and
+              Shift2Rail to deliver the next wave of sustainable mobility
+              through robust regulatory standards.</span
+            >
+          </div>
 
-                <div class="footer__content">
-                    <h3 class="footer__title">Information</h3>
-                    <ul>
-                        <li><a href="#" class="footer__link">Event</a></li>
-                        <li><a href="#" class="footer__link">Contact us</a></li>
-                        <li><a href="#" class="footer__link">Privacy policy</a></li>
-                        <li><a href="#" class="footer__link">Terms of services</a></li>
-                    </ul>
-                </div>
+          <div class="menu__content">
+            <img
+              src="//images.ctfassets.net/fl71vrk2b705/1ifU0X6EjtNdk1IvUNXFcu/e8a742225109ed6588323ef37eb40e48/india.png?fm=jpg&q=85"
+              alt=""
+              class="menu__img"
+            />
+            <h3 class="menu__name">India</h3>
+            <span class="menu__detail"
+              >The Government of Maharashtra has deemed hyperloop a public
+              infrastructure project and approved the Virgin Hyperloop-DP World
+              Consortium as the Original Project Proponent (OPP). This is a
+              landmark announcement for building the Pune-Mumbai hyperloop
+              transportation system, recognizing hyperloop technology alongside
+              other more traditional forms of mass transit. To forward this
+              progress, the Principal Scientific Advisor (PSA) to the Government
+              of India, Prof. Vijayraghavan, has set up an independent committee
+              called the Consultative Group on Future of Transportation (CGFT)
+              to explore the regulatory path for hyperloop.</span
+            >
+          </div>
+        </div>
+      </section>
+    </main>
 
-                <div class="footer__content">
-                    <h3 class="footer__title">Adress</h3>
-                    <ul>
-                        <li>Lima - Peru</li>
-                        <li>Jr Union #999</li>
-                        <li>999 - 888 - 777</li>
-                        <li>LOrem</li>
-                    </ul>
-                </div>
-            </div>
+    <!--========== FOOTER ==========-->
+    <footer class="footer section bd-container">
+      <div class="footer__container bd-grid">
+        <div class="footer__content">
+          <a href="#" class="footer__logo">Hyperloop</a>
+          <span class="footer__description">Fastest Transport</span>
+          <div>
+            <a href="#" class="footer__social"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+            <a href="#" class="footer__social"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a href="#" class="footer__social"
+              ><i class="bx bxl-twitter"></i
+            ></a>
+          </div>
+        </div>
 
-            <p class="footer__copy">&#169; 2021 singlegear. All right reserved</p>
-        </footer>
+        <div class="footer__content">
+          <h3 class="footer__title">Services</h3>
+          <ul>
+            <li><a href="#" class="footer__link">Delivery</a></li>
+            <li><a href="#" class="footer__link">Pricing</a></li>
+            <li><a href="#" class="footer__link">Fast food</a></li>
+            <li><a href="#" class="footer__link">Reserve your spot</a></li>
+          </ul>
+        </div>
 
-        <!--========== SCROLL REVEAL ==========-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+        <div class="footer__content">
+          <h3 class="footer__title">Information</h3>
+          <ul>
+            <li><a href="#" class="footer__link">Event</a></li>
+            <li><a href="#" class="footer__link">Contact us</a></li>
+            <li><a href="#" class="footer__link">Privacy policy</a></li>
+            <li><a href="#" class="footer__link">Terms of services</a></li>
+          </ul>
+        </div>
 
-        <!--========== MAIN JS ==========-->
-        <script src="assets/js/main.js"></script>
-    </body>
+        <div class="footer__content">
+          <h3 class="footer__title">Adress</h3>
+          <ul>
+            <li>Lima - Peru</li>
+            <li>Jr Union #999</li>
+            <li>999 - 888 - 777</li>
+            <li>LOrem</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="footer__copy">&#169; 2021 singlegear. All right reserved</p>
+    </footer>
+
+    <!--========== SCROLL REVEAL ==========-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>

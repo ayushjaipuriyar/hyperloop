@@ -12,7 +12,7 @@
 
     <!--========== CSS ==========-->
     <link rel="stylesheet" href="assets/css/styles.css" />
-    <link rel="stylesheet" href="assets/css/stylecart.css" />
+    <link rel="stylesheet" href="assets/css/stylecontact.css" />
     <link rel="stylesheet" href="assets/css/font-awesome.css" />
     <title>Hyperloop</title>
   </head>
@@ -61,13 +61,6 @@
             </li>
 
             <li><i class="bx bx-moon change-theme" id="theme-button"></i></li>
-            <li>
-              <a href="./checkout.html">
-                <i class="fa fa-shopping-cart" id="cart">
-                  <span class="counter"></span>
-                </i>
-              </a>
-            </li>
           </ul>
         </div>
 
@@ -77,101 +70,39 @@
       </nav>
     </header>
 
-    <div class="row">
-      <div class="product--blue">
-        <div class="product_inner">
-          <img
-            src="https://ih1.redbubble.net/image.398169735.6686/ssrco,slim_fit_t_shirt,flatlay,101010:01c5ca27c6,front,wide_portrait,750x1000-bg,f8f8f8.jpg"
-            width="300"
-          />
-          <p>Hope</p>
-          <p>Size M,L,XL,XXL</p>
-          <p>Price &#8377; 199.99</p>
-          <button>Add to basket</button>
-        </div>
-        <div class="product_overlay">
-          <h2>Added to basket</h2>
-          <i class="fa fa-check"></i>
-        </div>
+    <div class="container" id="container">
+      <div class="form-container sign-up-container">
+        <form>
+          <h1>Please enter your address</h1>
+          <input type="type" placeholder="Address" required />
+          <a href="./contact.html" target="_parent">
+            <button>Continue</button></a
+          >
+        </form>
       </div>
-      <div class="product--orange">
-        <div class="product_inner">
-          <img
-            src="https://ih1.redbubble.net/image.666526329.0460/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.u8.jpg"
-            width="300"
+      <div class="form-container sign-in-container">
+        <form name="form" class="form">
+          <h1>Hi</h1>
+          <span>Please provide the following</span>
+          <input type="text" name="email" placeholder="Email" required />
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
           />
-          <p>Tesla Stickers</p>
-          <p>Pack of 2</p>
-          <p>Price &#8377; 99.99</p>
-          <button>Add to basket</button>
-        </div>
-        <div class="product_overlay">
-          <h2>Added to basket</h2>
-          <i class="fa fa-check"></i>
-        </div>
+          <button class="ghost" id="signUp" onclick="signin(this.form)">
+            Continue
+          </button>
+        </form>
       </div>
-      <div class="product--red">
-        <div class="product_inner">
-          <img
-            src="https://ih1.redbubble.net/image.1241656627.3473/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg"
-            width="300"
-          />
-          <p>Mars Ticket</p>
-          <p>Individual</p>
-          <p>Price &#8377; 399.99</p>
-          <button>Add to basket</button>
-        </div>
-        <div class="product_overlay">
-          <h2>Added to basket</h2>
-          <i class="fa fa-check"></i>
-        </div>
-      </div>
-      <div class="product--green">
-        <div class="product_inner">
-          <img
-            src="https://ih1.redbubble.net/image.529853274.2419/ssrco,slim_fit_t_shirt,flatlay,101010:01c5ca27c6,front,wide_portrait,750x1000-bg,f8f8f8.jpg"
-            width="300"
-          />
-          <p>Hyperloop Tee</p>
-          <p>Size M,L,XL,XXL</p>
-          <p>Price &#8377; 299.99</p>
-          <button>Add to basket</button>
-        </div>
-        <div class="product_overlay">
-          <h2>Added to basket</h2>
-          <i class="fa fa-check"></i>
-        </div>
-      </div>
-      <div class="product--yellow">
-        <div class="product_inner">
-          <img
-            src="https://ih1.redbubble.net/image.1847572689.6932/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.u1.jpg"
-            width="300"
-          />
-          <p>Hyperloop metro Stickers</p>
-          <p>Pack of 2</p>
-          <p>Price &#8377; 299.99</p>
-          <button>Add to basket</button>
-        </div>
-        <div class="product_overlay">
-          <h2>Added to basket</h2>
-          <i class="fa fa-check"></i>
-        </div>
-      </div>
-      <div class="product--pink">
-        <div class="product_inner">
-          <img
-            src="https://ih1.redbubble.net/image.1725095995.8959/ur,pin_small_front,square,1000x1000.jpg"
-            width="300"
-          />
-          <p>Badge</p>
-          <p>Pack of 2</p>
-          <p>Price &#8377; 299.99</p>
-          <button>Add to basket</button>
-        </div>
-        <div class="product_overlay">
-          <h2>Added to basket</h2>
-          <i class="fa fa-check"></i>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left"></div>
+          <div class="overlay-panel overlay-right">
+            <h1></h1>
+            <p>Enter your personal details and to continue with the checkout</p>
+          </div>
         </div>
       </div>
     </div>
@@ -245,60 +176,31 @@
 
     <!--========== MAIN JS ==========-->
     <script src="assets/js/main.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <!-- partial -->
     <script>
-      $(function () {
-        "use strict";
-
-        var init = 0;
-        var counter = 0;
-
-        // Initial Cart
-        $(".counter").html(init);
-
-        // Add Items To Basket
-        function addToBasket() {
-          counter++;
-          $(".counter")
-            .html(counter)
-            .animate(
-              {
-                opacity: "0",
-              },
-              300,
-              function () {
-                $(".counter").delay(300).animate({
-                  opacity: "1",
-                });
-              }
-            );
+      const signUpButton = document.getElementById("signUp");
+      const signInButton = document.getElementById("signIn");
+      const container = document.getElementById("container");
+      function signin(form) {
+        if (form.email.value == "admin" && form.password.value == "admin") {
+          container.classList.add("right-panel-active");
+        } else {
+          alert("This is not the password");
         }
-
-        // Add To Basket Animation
-        $("button").on("click", function () {
-          addToBasket();
-          $(this)
-            .parent()
-            .parent()
-            .find(".product_overlay")
-            .css({
-              transform: " translateY(0px)",
-              opacity: "1",
-              transition: "all ease-in-out .45s",
-            })
-            .delay(1500)
-            .queue(function () {
-              $(this)
-                .css({
-                  transform: "translateY(-500px)",
-                  opacity: "0",
-                  transition: "all ease-in-out .45s",
-                })
-                .dequeue();
-            });
-        });
+      }
+      signUpButton.addEventListener("click", () => {
+        container.classList.add("right-panel-active");
+      });
+      signInButton.addEventListener("click", () => {
+        container.classList.remove("right-panel-active");
       });
     </script>
+    <style>
+      button.ghost {
+        background-color: var(--first-color);
+      }
+      button.ghost:hover {
+        background-color: var(--first-color-alt);
+      }
+    </style>
   </body>
 </html>
