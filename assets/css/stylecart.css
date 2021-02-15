@@ -21,7 +21,7 @@ button:focus {
 .product--red,
 .product--orange,
 .product--blue {
-  box-shadow: 1px 5px 15px #ccc;
+  box-shadow: 0px 4px 4px #00000010;
   width: 15em;
   height: auto;
   border-radius: 3px;
