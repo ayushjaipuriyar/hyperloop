@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--========== BOX ICONS ==========-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.css" />
+    <title>Hyperloop</title>
+  </head>
+  <body>
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+      <nav class="nav bd-container">
+        <a href="/index.html">
+          <svg class="loop">
+            <path
+              stroke="#ededed"
+              id="outline"
+              fill="none"
+              stroke-width="4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-miterlimit="10"
+              d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 				c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z"
+            />
+            <path
+              id="outline-bg"
+              opacity="0.05"
+              fill="none"
+              stroke="#ededed"
+              stroke-width="4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-miterlimit="10"
+              d="				M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 				c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z"
+            />
+          </svg>
+        </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#services" class="nav__link">Speciality</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact us</a>
+            </li>
+
+            <li><i class="bx bx-moon change-theme" id="theme-button"></i></li>
+
+            <a href="./cart.html">
+              <i class="fa fa-shopping-cart" id="cart">
+                <span class="counter"></span>
+              </i>
+            </a>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main">
+      <!--========== HOME ==========-->
+      <section class="home" id="home">
+        <div class="home__container bd-container bd-grid">
+          <div class="home__data">
+            <h1 class="home__title">XP-2</h1>
+            <h2 class="home__subtitle">
+              Our second transport <br />
+              vehicle.
+            </h2>
+          </div>
+
+          <img src="assets/img/pod2.png" alt="" class="home__img" />
+        </div>
+      </section>
+
+      <!--========== ABOUT ==========-->
+      <section class="about section bd-container" id="about">
+        <div class="about__container bd-grid">
+          <div class="about__data">
+            <span class="section-subtitle about__initial">About XP-2</span>
+            <h2 class="section-title about__initial">Safety & Technology</h2>
+            <p class="about__description">
+              You won’t need a space suit to go in our vacuum. Virgin Hyperloop
+              is developing the necessary subsystems required to ensure
+              traveling with hyperloop is as safe as riding an elevator.
+              Independently validated by an Independent Safety Assessor,
+              Certifer, our XP-2 vehicle and the DevLoop infrastructure
+              demonstrate many of the safety-critical systems that will be found
+              on a commercial hyperloop system, and are equipped with a
+              state-of-the-art control system that can detect off-nominal states
+              and rapidly trigger appropriate emergency responses.
+            </p>
+          </div>
+
+          <img src="assets/img/interior.png" alt="" class="about__img" />
+        </div>
+      </section>
+
+      <!--========== SERVICES ==========-->
+      <section class="services section bd-container" id="services">
+        <div class="services__container bd-grid">
+          <div class="services__content">
+            <h3 class="services__title">Speed</h3>
+            <p class="services__description">
+              Reaches upto a speed of 1000 km/h.That is 3x faster than
+              high-speed rail and more than 10x faster than traditional rail.
+            </p>
+          </div>
+
+          <div class="services__content">
+            <h3 class="services__title">Rapid Tube Repressurization</h3>
+            <p class="services__description">
+              Using distributed venting valves along the tube’s length, we can
+              safely re-pressurize faster than an airplane can descend.
+            </p>
+          </div>
+
+          <div class="services__content">
+            <h3 class="services__title">Automated Fire Suppression</h3>
+            <p class="services__description">
+              Along with redundant smoke detectors, the vehicle has most onboard
+              electronic systems enclosed with automated fire suppression.
+            </p>
+          </div>
+        </div>
+        <div class="services__container bd-grid">
+          <div class="services__content">
+            <h3 class="services__title">AirLock</h3>
+            <p class="services__description">
+              Our system uses airlocks to gradually and safely bring the vehicle
+              in and out of the near-vacuum environment without needing to
+              repressurize the entire system.
+            </p>
+          </div>
+
+          <div class="services__content">
+            <h3 class="services__title">Emergency Egress</h3>
+            <p class="services__description">
+              Our DevLoop tube contains emergency egresses every 75m in the
+              event passengers need to exit the vehicle.
+            </p>
+          </div>
+
+          <div class="services__content">
+            <h3 class="services__title">Air Scrubbing & Filtering</h3>
+            <p class="services__description">
+              Air-conditioned and scrubbed of CO2 and airborne contaminants, the
+              air inside the vehicle is crisp, clean, and continuously monitored
+              by the Pod Safety Controller.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <style>
+      .services__content {
+        box-shadow: 0 4px 4px #00000020;
+        border-radius: 9px;
+        padding: 20px;
+      }
+      #home {
+        background: linear-gradient(
+          -45deg,
+          var(--first-color-alt) 50%,
+          rgba(255, 255, 255, 0.5) 50%
+        );
+      }
+    </style>
+    <!--========== FOOTER ==========-->
+    <footer class="footer section bd-container">
+      <div class="footer__container bd-grid">
+        <div class="footer__content">
+          <a href="#" class="footer__logo">Hyperloop</a>
+          <span class="footer__description">Fastest Transport</span>
+          <div>
+            <a
+              href="https://www.facebook.com/VirginHyperloop/"
+              class="footer__social"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/virginhyperloop/"
+              class="footer__social"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a href="https://twitter.com/virginhyperloop" class="footer__social"
+              ><i class="bx bxl-twitter"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/virginhyperloop"
+              class="footer__social"
+              ><i class="bx bxl-youtube"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/company/virgin-hyperloop"
+              class="footer__social"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Experience</h3>
+          <ul>
+            <li><a href="#" class="footer__link"></a></li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Information</h3>
+          <ul>
+            <li><a href="#" class="footer__link">Event</a></li>
+            <li><a href="#" class="footer__link">Contact us</a></li>
+            <li><a href="#" class="footer__link">Privacy policy</a></li>
+            <li><a href="#" class="footer__link">Terms of services</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Adress</h3>
+          <ul>
+            <li>2159 Bay Street</li>
+            <li>Los Angeles</li>
+            <li>California</li>
+            <li>United States</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="footer__copy">&#169; 2021 Virginhyperloop All right reserved</p>
+    </footer>
+
+    <!--========== SCROLL REVEAL ==========-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
