@@ -92,7 +92,7 @@ button:focus {
   align-items: center;
 }
 .product_overlay h2 {
-  color: var(--text-color);
+  color: #fff;
   font-size: 1.2em;
   margin: 1em 0;
 }

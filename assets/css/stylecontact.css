@@ -17,7 +17,10 @@ button {
   text-transform: uppercase;
   transition: 0.3s;
 }
-
+form h1,
+span {
+  color: #000;
+}
 button:active {
   transform: scale(1.2);
 }
