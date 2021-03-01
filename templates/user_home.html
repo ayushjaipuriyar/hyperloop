@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--========== BOX ICONS ==========-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/stylecontact.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.css" />
+    <title>Hyperloop</title>
+  </head>
+  <body>
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+      <nav class="nav bd-container">
+        <a href="./index.html">
+          <svg class="loop">
+            <path
+              stroke="#ededed"
+              id="outline"
+              fill="none"
+              stroke-width="4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-miterlimit="10"
+              d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 				c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z"
+            />
+            <path
+              id="outline-bg"
+              opacity="0.05"
+              fill="none"
+              stroke="#ededed"
+              stroke-width="4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-miterlimit="10"
+              d="				M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 				c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z"
+            />
+          </svg>
+        </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a
+                href="http://127.0.0.1:5501/index.html"
+                class="nav__link active-link"
+                >Home</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="http://127.0.0.1:5501/index.html#about" class="nav__link"
+                >About</a
+              >
+            </li>
+            <li class="nav__item">
+              <a
+                href="http://127.0.0.1:5501/index.html#services"
+                class="nav__link"
+                >Services</a
+              >
+            </li>
+            <li class="nav__item">
+              <a
+                href="http://127.0.0.1:5501/index.html#contact"
+                class="nav__link"
+                >Contact us</a
+              >
+            </li>
+
+            <li><i class="bx bx-moon change-theme" id="theme-button"></i></li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container" id="container">
+      <div class="form-container sign-in-container">
+        <form
+          action="{{ url_for('login')}}"
+          method="post"
+          yname="form"
+          class="form"
+          id="login"
+        >
+          <h1>We have placed your order</h1>
+          <span>It will be arriving in the next 2-3 weeks.</span>
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1>Continue Typing</h1>
+
+            <button class="ghost" id="signUp">Continue</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1></h1>
+            <p>Continue Exploring</p>
+            <br />
+            <a href="http://127.0.0.1:5501/index.html"
+              ><button class="ghost">Let's Go</button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--========== FOOTER ==========-->
+    <footer class="footer section bd-container">
+      <div class="footer__container bd-grid">
+        <div class="footer__content">
+          <a href="#" class="footer__logo">Hyperloop</a>
+          <span class="footer__description">Fastest Transport</span>
+          <div>
+            <a
+              href="https://www.facebook.com/VirginHyperloop/"
+              class="footer__social"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/virginhyperloop/"
+              class="footer__social"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a href="https://twitter.com/virginhyperloop" class="footer__social"
+              ><i class="bx bxl-twitter"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/virginhyperloop"
+              class="footer__social"
+              ><i class="bx bxl-youtube"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/company/virgin-hyperloop"
+              class="footer__social"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Experience</h3>
+          <ul>
+            <li><a href="#" class="footer__link"></a></li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Information</h3>
+          <ul>
+            <li><a href="#" class="footer__link">Event</a></li>
+            <li><a href="#" class="footer__link">Contact us</a></li>
+            <li><a href="#" class="footer__link">Privacy policy</a></li>
+            <li><a href="#" class="footer__link">Terms of services</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Adress</h3>
+          <ul>
+            <li>2159 Bay Street</li>
+            <li>Los Angeles</li>
+            <li>California</li>
+            <li>United States</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="footer__copy">&#169; 2021 Virginhyperloop All right reserved</p>
+    </footer>
+
+    <!--========== SCROLL REVEAL ==========-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/main.js"></script>
+    <style>
+      button.ghost {
+        background-color: var(--first-color);
+      }
+      button.ghost:hover {
+        background-color: var(--first-color-alt);
+      }
+      /*===== GOOGLE FONTS =====*/
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+      /*===== VARIABLES CSS =====*/
+      :root {
+        --header-height: 3rem;
+
+        /*========== Colors ==========*/
+        --first-color: #3f51b5;
+        --first-color-alt: #7b07ff;
+        --title-color: #393939;
+        --text-color: #707070;
+        --text-color-light: #a6a6a6;
+        --body-color: #fbfefd;
+        --container-color: #ffffff;
+
+        /*========== Font and typography ==========*/
+        --body-font: "Poppins", sans-serif;
+        --biggest-font-size: 2.25rem;
+        --h1-font-size: 1.5rem;
+        --h2-font-size: 1.25rem;
+        --h3-font-size: 1rem;
+        --normal-font-size: 0.938rem;
+        --small-font-size: 0.813rem;
+        --smaller-font-size: 0.75rem;
+
+        /*========== Font weight ==========*/
+        --font-medium: 500;
+        --font-semi-bold: 600;
+
+        /*========== Margenes ==========*/
+        --mb-1: 0.5rem;
+        --mb-2: 1rem;
+        --mb-3: 1.5rem;
+        --mb-4: 2rem;
+        --mb-5: 2.5rem;
+        --mb-6: 3rem;
+
+        /*========== z index ==========*/
+        --z-tooltip: 10;
+        --z-fixed: 999999;
+      }
+
+      @media screen and (min-width: 768px) {
+        :root {
+          --biggest-font-size: 4rem;
+          --h1-font-size: 2.25rem;
+          --h2-font-size: 1.5rem;
+          --h3-font-size: 1.25rem;
+          --normal-font-size: 1rem;
+          --small-font-size: 0.875rem;
+          --smaller-font-size: 0.813rem;
+        }
+      }
+
+      /*========== BASE ==========*/
+      *,
+      ::before,
+      ::after {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+      body::-webkit-scrollbar {
+        width: 11px;
+      }
+      body {
+        scrollbar-width: thin;
+        scrollbar-color: var(--text-color) var(--background-color);
+      }
+      body::-webkit-scrollbar-track {
+        background: var(--background-color);
+      }
+      body::-webkit-scrollbar-thumb {
+        background-color: var(--text-color);
+        border-radius: 6px;
+        border: 3px solid var(--background-color);
+      }
+
+      /*========== Variables Dark theme ==========*/
+      body.dark-theme {
+        --title-color: #f1f3f2;
+        --text-color: #c7d1cc;
+        --body-color: #1d2521;
+        --container-color: #27302c;
+      }
+
+      /*========== Button Dark/Light ==========*/
+      .change-theme {
+        position: absolute;
+        right: 1rem;
+        top: 1.8rem;
+        color: var(--text-color);
+        font-size: 1rem;
+        cursor: pointer;
+      }
+
+      body {
+        margin: var(--header-height) 0 0 0;
+        font-family: var(--body-font);
+        font-size: var(--normal-font-size);
+        background-color: var(--body-color);
+        color: var(--text-color);
+        line-height: 1.6;
+      }
+
+      h1,
+      h2,
+      h3,
+      p,
+      ul {
+        margin: 0;
+      }
+
+      ul {
+        padding: 0;
+        list-style: none;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      /*========== CLASS CSS ==========*/
+      .section {
+        padding: 4rem 0 2rem;
+      }
+
+      .section-title,
+      .section-subtitle {
+        text-align: center;
+      }
+
+      .section-title {
+        font-size: var(--h1-font-size);
+        color: var(--title-color);
+        margin-bottom: var(--mb-3);
+      }
+
+      .section-subtitle {
+        display: block;
+        color: var(--first-color);
+        font-weight: var(--font-medium);
+        margin-bottom: var(--mb-1);
+      }
+
+      /*========== LAYOUT ==========*/
+      .bd-container {
+        max-width: 960px;
+        width: calc(100% - 2rem);
+        margin-left: var(--mb-2);
+        margin-right: var(--mb-2);
+      }
+
+      .bd-grid {
+        display: grid;
+        gap: 1.5rem;
+      }
+
+      .l-header {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: var(--z-fixed);
+        background-color: var(--body-color);
+      }
+
+      /*========== NAV ==========*/
+      .nav {
+        max-width: 1024px;
+        height: var(--header-height);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 9999;
+      }
+
+      @media screen and (max-width: 768px) {
+        .nav__menu {
+          position: fixed;
+          top: -100%;
+          left: 0;
+          width: 100%;
+          padding: 1.5rem 0 1rem;
+          text-align: center;
+          background-color: var(--body-color);
+          transition: 0.4s;
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+          border-radius: 0 0 1rem 1rem;
+          z-index: var(--z-fixed);
+        }
+      }
+
+      .nav__item {
+        margin-bottom: var(--mb-2);
+      }
+
+      .nav__link,
+      .nav__logo,
+      .nav__toggle {
+        color: var(--text-color);
+        font-weight: var(--font-medium);
+      }
+
+      .nav__logo:hover {
+        color: var(--first-color);
+      }
+
+      .nav__link {
+        transition: 0.3s;
+      }
+
+      .nav__link:hover {
+        color: var(--first-color);
+      }
+
+      .nav__toggle {
+        font-size: 1.3rem;
+        cursor: pointer;
+      }
+
+      /* Show menu */
+      .show-menu {
+        top: var(--header-height);
+      }
+
+      /* Active menu */
+      .active-link {
+        color: var(--first-color);
+      }
+
+      /* Change background header */
+      .scroll-header {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Scroll top */
+      .scrolltop {
+        position: fixed;
+        right: 1rem;
+        bottom: -20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.3rem;
+        background: rgba(6, 156, 84, 0.5);
+        border-radius: 0.4rem;
+        z-index: var(--z-tooltip);
+        transition: 0.4s;
+        visibility: hidden;
+      }
+
+      .scrolltop:hover {
+        background-color: var(--first-color-alt);
+      }
+
+      .scrolltop__icon {
+        font-size: 1.8rem;
+        color: var(--body-color);
+      }
+
+      /* Show scrolltop */
+      .show-scroll {
+        visibility: visible;
+        bottom: 1.5rem;
+      }
+
+      /*========== HOME ==========*/
+      .home__container {
+        height: calc(100vh - var(--header-height));
+        align-content: center;
+      }
+
+      .home__title {
+        font-size: var(--biggest-font-size);
+        color: var(--first-color);
+        margin-bottom: var(--mb-1);
+      }
+
+      .home__subtitle {
+        font-size: var(--h1-font-size);
+        color: var(--title-color);
+        margin-bottom: var(--mb-4);
+      }
+
+      .home__img {
+        justify-self: center;
+      }
+
+      /*========== BUTTONS ==========*/
+      .button {
+        display: inline-block;
+        background-color: var(--first-color);
+        color: #fff;
+        padding: 0.75rem 1rem;
+        border-radius: 0.5rem;
+        transition: 0.3s;
+      }
+
+      .button:hover {
+        background-color: var(--first-color-alt);
+      }
+
+      /*========== ABOUT ==========*/
+      .about__data {
+        text-align: center;
+      }
+
+      .about__description {
+        margin-bottom: var(--mb-3);
+      }
+
+      .about__img {
+        width: 280px;
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      /*========== SERVICES ==========*/
+      .services__container {
+        row-gap: 2.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      }
+
+      .services__content {
+        text-align: center;
+      }
+
+      .services i {
+        fill: var(--first-color);
+        margin-bottom: var(--mb-2);
+        margin-top: var(--mb-2);
+        color: var(--first-color);
+      }
+
+      .services__title {
+        font-size: var(--h3-font-size);
+        color: var(--title-color);
+        margin-bottom: var(--mb-1);
+      }
+
+      .services__description {
+        padding: 0 1.5rem;
+      }
+
+      /*========== CONTACT ==========*/
+      .contact__container {
+        text-align: center;
+      }
+
+      .contact__description {
+        margin-bottom: var(--mb-3);
+      }
+
+      /*========== FOOTER ==========*/
+      .footer__container {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        row-gap: 2rem;
+      }
+
+      .footer__logo {
+        font-size: var(--h3-font-size);
+        color: var(--first-color);
+        font-weight: var(--font-semi-bold);
+      }
+
+      .footer__description {
+        display: block;
+        font-size: var(--small-font-size);
+        margin: 0.25rem 0 var(--mb-3);
+      }
+
+      .footer__social {
+        font-size: 1.5rem;
+        color: var(--title-color);
+        margin-right: var(--mb-2);
+      }
+
+      .footer__title {
+        font-size: var(--h2-font-size);
+        color: var(--title-color);
+        margin-bottom: var(--mb-2);
+      }
+
+      .footer__link {
+        display: inline-block;
+        color: var(--text-color);
+        margin-bottom: var(--mb-1);
+      }
+
+      .footer__link:hover {
+        color: var(--first-color);
+      }
+
+      .footer__copy {
+        text-align: center;
+        font-size: var(--small-font-size);
+        color: var(--text-color-light);
+        margin-top: 3.5rem;
+      }
+
+      /*========== MEDIA QUERIES ==========*/
+      @media screen and (min-width: 576px) {
+        .home__container,
+        .about__container {
+          grid-template-columns: repeat(2, 1fr);
+          align-items: center;
+        }
+
+        .about__data,
+        .about__initial,
+        .contact__container,
+        .contact__initial {
+          text-align: initial;
+        }
+
+        .about__img {
+          width: 400px;
+          order: -1;
+        }
+
+        .contact__container {
+          grid-template-columns: 1.75fr 1fr;
+          align-items: center;
+        }
+        .contact__button {
+          justify-self: center;
+        }
+      }
+
+      @media screen and (min-width: 768px) {
+        body {
+          margin: 0;
+        }
+
+        .section {
+          padding-top: 8rem;
+        }
+
+        .nav {
+          height: calc(var(--header-height) + 1.5rem);
+        }
+        .nav__list {
+          display: flex;
+        }
+        .nav__item {
+          margin-left: var(--mb-5);
+          margin-bottom: 0;
+        }
+        .nav__toggle {
+          display: none;
+        }
+
+        .change-theme {
+          position: initial;
+          margin-left: var(--mb-2);
+        }
+
+        .home__container {
+          height: 100vh;
+          justify-items: center;
+        }
+
+        .services__container {
+          margin-top: var(--mb-6);
+        }
+      }
+
+      @media screen and (min-width: 960px) {
+        .bd-container {
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .about__container,
+        .app__container {
+          column-gap: 7rem;
+        }
+      }
+
+      /*========== SVG ==========*/
+
+      #outline {
+        stroke: var(--text-color);
+        stroke-dasharray: 2.42777px, 242.77666px;
+        stroke-dashoffset: 0;
+        -webkit-animation: anim 1.6s linear infinite;
+        animation: anim 1.6s linear infinite;
+      }
+
+      @-webkit-keyframes anim {
+        12.5% {
+          stroke-dasharray: 33.98873px, 242.77666px;
+          stroke-dashoffset: -26.70543px;
+        }
+        43.75% {
+          stroke-dasharray: 84.97183px, 242.77666px;
+          stroke-dashoffset: -84.97183px;
+        }
+        100% {
+          stroke-dasharray: 2.42777px, 242.77666px;
+          stroke-dashoffset: -240.34889px;
+        }
+      }
+
+      @keyframes anim {
+        12.5% {
+          stroke-dasharray: 33.98873px, 242.77666px;
+          stroke-dashoffset: -26.70543px;
+        }
+        43.75% {
+          stroke-dasharray: 84.97183px, 242.77666px;
+          stroke-dashoffset: -84.97183px;
+        }
+        100% {
+          stroke-dasharray: 2.42777px, 242.77666px;
+          stroke-dashoffset: -240.34889px;
+        }
+      }
+      svg {
+        height: 100px;
+      }
+
+      /*========== MENU ==========*/
+      .menu__container {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+      }
+
+      .menu__content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--container-color);
+        border-radius: 0.5rem;
+        box-shadow: 0 2px 4px rgba(3, 74, 40, 0.15);
+        padding: 0.75rem;
+      }
+
+      .menu__img {
+        width: auto;
+        align-self: center;
+        margin-bottom: var(--mb-2);
+      }
+
+      .menu__name,
+      .menu__preci {
+        font-weight: var(--font-semi-bold);
+        color: var(--title-color);
+      }
+
+      .menu__name {
+        font-size: var(--normal-font-size);
+      }
+
+      .menu__detail,
+      .menu__preci {
+        font-size: var(--small-font-size);
+      }
+
+      .menu__detail {
+        margin-bottom: var(--mb-1);
+      }
+
+      #cart {
+        margin-left: 20px;
+        margin-top: -10px;
+      }
+      body {
+        background: var(--body-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      button {
+        border-radius: 20px;
+        border: 1px solid var(--first-color-alt);
+        background-color: var(--first-color);
+        color: #ffffff;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 12px 45px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        transition: 0.3s;
+      }
+      form h1,
+      span {
+        color: #000;
+      }
+      button:active {
+        transform: scale(1.2);
+      }
+
+      button:focus {
+        outline: none;
+      }
+
+      button.ghost {
+        background-color: transparent;
+        border-color: #ffffff;
+      }
+
+      button:hover {
+        background-color: var(--first-color-alt);
+      }
+
+      form {
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 50px;
+        height: 100%;
+        text-align: center;
+      }
+
+      input {
+        background-color: #eee;
+        border: none;
+        padding: 12px 15px;
+        margin: 8px 0;
+        width: 100%;
+      }
+
+      .container {
+        background-color: var(--body-color);
+        border-radius: 10px;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+          0 10px 10px rgba(0, 0, 0, 0.22);
+        position: relative;
+        overflow: hidden;
+        width: 768px;
+        margin-top: 15vh;
+        max-width: 100%;
+        min-height: 480px;
+      }
+
+      .form-container {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        transition: all 0.6s ease-in-out;
+      }
+
+      .sign-in-container {
+        left: 0;
+        width: 50%;
+        z-index: 2;
+      }
+
+      .container.right-panel-active .sign-in-container {
+        transform: translateX(100%);
+      }
+
+      .sign-up-container {
+        left: 0;
+        width: 50%;
+        opacity: 0;
+        z-index: 1;
+      }
+
+      .container.right-panel-active .sign-up-container {
+        transform: translateX(100%);
+        opacity: 1;
+        z-index: 5;
+        animation: show 0.6s;
+      }
+
+      @keyframes show {
+        0%,
+        49.99% {
+          opacity: 0;
+          z-index: 1;
+        }
+
+        50%,
+        100% {
+          opacity: 1;
+          z-index: 5;
+        }
+      }
+
+      .overlay-container {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+        transition: transform 0.6s ease-in-out;
+        z-index: 100;
+      }
+
+      .container.right-panel-active .overlay-container {
+        transform: translateX(-100%);
+      }
+
+      .overlay {
+        background: var(--first-color);
+        background: -webkit-linear-gradient(
+          to right,
+          var(--first-color),
+          var(--first-color-alt)
+        );
+        background: linear-gradient(
+          to right,
+          var(--first-color),
+          var(--first-color-alt)
+        );
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 0 0;
+        color: #ffffff;
+        position: relative;
+        left: -100%;
+        height: 100%;
+        width: 200%;
+        transform: translateX(0);
+        transition: transform 0.6s ease-in-out;
+      }
+
+      .container.right-panel-active .overlay {
+        transform: translateX(50%);
+      }
+
+      .overlay-panel {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 40px;
+        text-align: center;
+        top: 0;
+        height: 100%;
+        width: 50%;
+        transform: translateX(0);
+        transition: transform 0.6s ease-in-out;
+      }
+
+      .overlay-left {
+        transform: translateX(-20%);
+      }
+
+      .container.right-panel-active .overlay-left {
+        transform: translateX(0);
+      }
+
+      .overlay-right {
+        right: 0;
+        transform: translateX(0);
+      }
+
+      .container.right-panel-active .overlay-right {
+        transform: translateX(20%);
+      }
+
+      .social-container {
+        margin: 20px 0;
+      }
+
+      .social-container a {
+        border: 1px solid #dddddd;
+        border-radius: 50%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 5px;
+        height: 40px;
+        width: 40px;
+      }
+    </style>
+  </body>
+</html>
