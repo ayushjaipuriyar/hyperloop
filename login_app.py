@@ -22,6 +22,7 @@ class User(db.Model):
     uid = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(100), unique=True, nullable=False)
     pass_hash = db.Column(db.String(100), nullable=False)
+    address = db.Column(db.String(100), nullable=False)
 
     def __repr__(self):
         return '' % self.username
@@ -45,6 +46,7 @@ def signup():
     if request.method == "POST":
         username = request.form['username']
         password = request.form['password']
+        address = request.form['address']
 
         if not (username and password):
             flash("Username or Password cannot be empty")
@@ -52,11 +54,13 @@ def signup():
         else:
             username = username.strip()
             password = password.strip()
+            address = address.strip()
 
         # Returns salted pwd hash in format : method$salt$hashedvalue
         hashed_pwd = generate_password_hash(password, 'sha256')
 
-        new_user = User(username=username, pass_hash=hashed_pwd)
+        new_user = User(username=username,
+                        pass_hash=hashed_pwd, address=address)
         db.session.add(new_user)
 
         try:
